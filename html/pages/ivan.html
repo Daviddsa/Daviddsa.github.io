@@ -19,15 +19,11 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <!-- <li class="nav-item"> -->
-                    <!-- <a class="nav-link active" href="index.html">Inicio</a> -->
+                    <!-- <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a> -->
                 <!-- </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="/html/pages/pc_gen.html">Generador PJs</a>
                 </li>
-                <!-- <li class="nav-item"> -->
-                    <!-- <a class="nav-link" href="km.html">Generador PF: Kingmaker</a> -->
-                <!-- </li> -->
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PF: Kingmaker</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -35,14 +31,13 @@
                         <a class="dropdown-item" href="/html/pages/personajes.html">Partida Sevilla</a>
                     </div>
                 </li>
-
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Iván & D&D5e</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         <a class="dropdown-item" href="/html/pages/toa.html">Generador Clima: Tumba de la Aniquilación</a>
                         <a class="dropdown-item disabled" href="/html/pages/toa_gen.html">Generador Encuentros: Tumba de la Aniquilación</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/html/pages/ivan.html">Test Iván</a>
+                        <a class="dropdown-item active" href="/html/pages/ivan.html">Test Iván</a>
                         <!-- <a class="dropdown-item disabled" href="#">Something else here</a> -->
                     </div>
                 </li>
@@ -58,17 +53,33 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <div class="container">
-                <h1 class="display-6">Bienvenido a la web de utilidades roleras del Señor David "NaithT" Solsona :)</h1>
+                <h1 class="display-6">Tests Iván</h1>
 
+                <p><strong>Indica los valores a usar:</strong>
+                    <br />
+                    <a id="input" class="form-group mx-sm-3 mb-2">
+                        <input type="text" class="form-control col-md-3" name="character">
+                    </a>
+                    <br />
+                    <button type="button" class="btn btn-primary" onclick="addInput()">Añadir campo de entrada</button>
+                    <button type="button" class="btn btn-primary" onclick="deleteInput()">Eliminar campo de entrada</button>
+                    <button type="button" class="btn btn-primary" onclick="testIvan()">Calcular</button>
+                </p>
+
+                <a id="output"></a>
                 <footer class="fixed-bottom text-right">Web creada por David Solsona.</footer>
             </div>
-        </div> <!-- /container -->
-    </main>
+        </div>
+    </main><!-- /.container -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Scripts personalizados -->
+    <script src="/js/toa.js"></script>
+    <script src="/js/utils.js"></script>
 </body>
 </html>
