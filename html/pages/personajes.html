@@ -6,13 +6,13 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <title>Forjador de Reyes</title>
-    
+
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/">
-    
+
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    
+
+
     <style>
     .bd-placeholder-img {
         font-size: 1.125rem;
@@ -22,7 +22,7 @@
         -ms-user-select: none;
         user-select: none;
     }
-    
+
     .embed-container {
         position: relative;
         padding-bottom: 56.25%;
@@ -36,7 +36,7 @@
         width: 100%;
         height: 100%;
     }
-    
+
     /* CSS pantalla 768px o superior */
     @media (min-width: 768px) {
         .bd-placeholder-img-lg {
@@ -64,7 +64,7 @@
                 <!-- <li class="nav-item"> -->
                 <!-- <a class="nav-link" href="km.html">Generador PF: Kingmaker</a> -->
                 <!-- </li> -->
-                
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PF: Kingmaker</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -72,7 +72,7 @@
                         <a class="dropdown-item active" href="/html/pages/personajes.html">Partida Sevilla</a>
                     </div>
                 </li>
-                
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Iván & D&D5e</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -89,9 +89,9 @@
             </ul>
         </div>
     </nav>
-    
+
     <br />
-    
+
     <main role="main">
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
@@ -101,56 +101,55 @@
                 <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
             </div>
         </div>
-        
+
         <div class="container">
             <!-- Example row of columns -->
             <div class="row">
-                <div class="col-md-5">
-                    <h2>PNJs</h2>
-                    <p>
-                        <a href="#"><em><b>Oleg Leveton</b></em></a>
-                        <br /><a href="#"><em><b>Svetlana Leveton</b></em></a>
-                        <br /><a href="#"><em><b>Jhod Kavken</b></em></a>
-                        <br /><a href="#"><em><b>Kesten Garess</b></em></a>
-                        <br /><a href="#"><em><b>Bokken</b></em></a>
-                        <br /><a href="#"><em><b>Akiros Ismort</b></em></a>
-                    </p>
-                </div>
-                <div class="col-md-7">
+                <div class="col-md-12">
                     <h2>PJs</h2>
                     <p>
                         <a href="/html/pjs/faelyn.html"><em><b>Faelyn</b></em> - Maga 4</a>
-                        <br /><a href="/html/pjs/ragarius.html"><em><b>Ragarius</b></em> - Exterminador 4</a>
+                        <br /><a class='disabled' href="#"><em><b><del>Vanros</del></b></em> - Clérigo 3</a> / <a href="/html/pjs/ragarius.html"><em><b>Ragarius</b></em> - Exterminador 4</a>
                         <br /><a href="/html/pjs/shaka.html"><em><b>Shaka</b></em> - Explorador 4</a>
                         <br /><a href="/html/pjs/throgall.html"><em><b>Throgall</b></em> - Rabioso de sangre 4</a>
                     </p>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-3">
+                    <h2>PNJs</h2>
+                    <p>
+                        <a href="/html/pnjs/oleg_leveton.html"><em><b>Oleg Leveton</b></em></a>
+                        <br /><a href="/html/pnjs/svetlana_leveton.html"><em><b>Svetlana Leveton</b></em></a>
+                        <br /><a href="/html/pnjs/jhod_kavken.html"><em><b>Jhod Kavken</b></em></a>
+                        <br /><a href="/html/pnjs/kesten_garess.html"><em><b>Kesten Garess</b></em></a>
+                        <br /><a href="/html/pnjs/bokken.html"><em><b>Bokken</b></em></a>
+                        <br /><a href="#"><em><b>Akiros Ismort</b></em></a>
+                    </p>
+                </div>
+                <div class="col-md-9">
                     <h2>Registro de aventuras</h2>
                     <div class="embed-container">
                         <iframe src="https://docs.google.com/document/d/e/2PACX-1vR-YCO0WiN9NGWsOfRuojYFend6lI0MV3uLOn-fEHKy3XixDh1fowcc9JeDib2G0PmWGanknpOQBtae/pub?embedded=true"></iframe>
                     </div>
                 </div>
             </div>
-            
+
             <hr>
         </div> <!-- /container -->
     </main>
-    
+
     <footer class="container">
         <p>&copy; David "NaithT" Solsona - 2019</p>
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write("<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>")</script>
     <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+
 </body>
 </html>
-        
