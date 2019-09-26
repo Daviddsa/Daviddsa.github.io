@@ -35,7 +35,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Iván & D&D5e</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         <a class="dropdown-item" href="/html/pages/toa.html">Generador Clima: Tumba de la Aniquilación</a>
-                        <a class="dropdown-item disabled" href="/html/pages/toa_gen.html">Generador Encuentros: Tumba de la Aniquilación</a>
+                        <a class="dropdown-item" href="/html/pages/toa_gen.html">Generador Encuentros: Tumba de la Aniquilación</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item active" href="/html/pages/ivan.html">Test Iván</a>
                         <!-- <a class="dropdown-item disabled" href="#">Something else here</a> -->
@@ -56,20 +56,22 @@
         <div class="jumbotron">
             <div class="container">
                 <h1 class="display-6">Tests Iván</h1>
-
-                <p><strong>Indica los valores a usar:</strong>
-                    <br />
-                    <a id="input" class="form-group mx-sm-3 mb-2">
-                        <input type="text" class="form-control col-md-3" name="character">
-                    </a>
-                    <br />
-                    <button type="button" class="btn btn-primary" onclick="addInput()">Añadir campo de entrada</button>
-                    <button type="button" class="btn btn-primary" onclick="deleteInput()">Eliminar campo de entrada</button>
-                    <button type="button" class="btn btn-primary" onclick="testIvan()">Calcular</button>
-                </p>
-
-                <a id="output"></a>
             </div>
+        </div>
+
+        <div class="container">
+            <p><strong>Indica los valores a usar:</strong>
+                <br />
+                <a id="input" class="form-group mx-sm-3 mb-2">
+                    <input type="text" class="form-control col-md-3" name="character">
+                </a>
+                <br />
+                <button type="button" class="btn btn-primary" onclick="addInput()">Añadir campo de entrada</button>
+                <button type="button" class="btn btn-primary" onclick="deleteInput()">Eliminar campo de entrada</button>
+                <button type="button" class="btn btn-primary" onclick="testIvan()">Calcular</button>
+            </p>
+
+            <a id="output"></a>
         </div>
     </main><!-- /.container -->
 

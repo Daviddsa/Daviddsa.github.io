@@ -57,7 +57,9 @@
     font-style: italic;
 }
 .divIndent {
-    margin-left: 40px;
-    font: normal 13px 'Lato', sans-serif;
-    line-height: 1.5em;
+	margin-top: -5px;
+	margin-bottom: -7px;
+	margin-left: 40px;
+	font: normal 13px "Lato", sans-serif;
+	line-height: 1.5em;
 }
