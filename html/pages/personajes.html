@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="David Solsona">
     <title>Web Rolera NaithT</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/">
@@ -15,7 +15,7 @@
 
     <style>
     .bd-placeholder-img {
-        font-size: 1.125rem;
+        font-size: 1.75rem;
         text-anchor: middle;
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -25,13 +25,15 @@
 
     .embed-container {
         position: relative;
-        padding-bottom: 56.25%;
+        /* padding-bottom: 56.25%; */
+        padding-bottom: 100%;
+        margin-right: -100px;
         height: 0;
         overflow: hidden;
     }
     .embed-container iframe {
         position: absolute;
-        top:0;
+        top: 0;
         left: 0;
         width: 100%;
         height: 100%;
@@ -108,21 +110,128 @@
                 <div class="col-md-3">
                     <h2>PJs</h2>
                     <p>
-                        <a href="/html/pjs/faelyn.html"><em><b>Faelyn</b></em> - Maga 4</a>
-                        <br /><a href="/html/pjs/ragarius.html"><em><b>Ragarius</b></em> - Exterminador 4</a>
-                        <br /><a href="/html/pjs/sajan.html"><em><b>Sajan</b></em> - Monje 4</a>
-                        <br /><a href="/html/pjs/shaka.html"><em><b>Shaka</b></em> - Explorador 4</a>
-                        <br /><a href="/html/pjs/throgall.html"><em><b>Throgall</b></em> - Rabioso de sangre 4</a>
+                        <div class="card accordion">
+                            <a class="btn btn-link card-header text-left" href="/html/pjs/faelyn.html"><em><b>Faelyn</b></em> Maga 4</a>
+                            <a class="btn btn-link card-header text-left" href="/html/pjs/ragarius.html"><em><b>Ragarius</b></em> Exterminador 4</a>
+                            <a class="btn btn-link card-header text-left" href="/html/pjs/sajan.html"><em><b>Sajan</b></em> Monje 4</a>
+                            <a class="btn btn-link card-header text-left" href="/html/pjs/shaka.html"><em><b>Shaka</b></em> Explorador 4</a>
+                            <a class="btn btn-link card-header text-left" href="/html/pjs/throgall.html"><em><b>Throgall</b></em> Rabioso de sangre 4</a>
+                        </div>
                     </p>
 
                     <h2>PNJs</h2>
                     <p>
-                        <a href="/html/pnjs/oleg_leveton.html"><em><b>Oleg Leveton</b></em></a>
-                        <br /><a href="/html/pnjs/svetlana_leveton.html"><em><b>Svetlana Leveton</b></em></a>
-                        <br /><a href="/html/pnjs/jhod_kavken.html"><em><b>Jhod Kavken</b></em></a>
-                        <br /><a href="/html/pnjs/kesten_garess.html"><em><b>Kesten Garess</b></em></a>
-                        <br /><a href="/html/pnjs/bokken.html"><em><b>Bokken</b></em></a>
-                        <br /><a href="#"><em><b>Akiros Ismort</b></em></a>
+                        <!-- <a href="/html/pnjs/oleg_leveton.html"><em><b>Oleg Leveton</b></em></a> -->
+                        <!-- <br /><a href="/html/pnjs/svetlana_leveton.html"><em><b>Svetlana Leveton</b></em></a> -->
+                        <!-- <br /><a href="/html/pnjs/jhod_kavken.html"><em><b>Jhod Kavken</b></em></a> -->
+                        <!-- <br /><a href="/html/pnjs/kesten_garess.html"><em><b>Kesten Garess</b></em></a> -->
+                        <!-- <br /><a href="/html/pnjs/bokken.html"><em><b>Bokken</b></em></a> -->
+                        <!-- <br /><a href="#"><em><b>Akiros Ismort</b></em></a> -->
+
+
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingPnj1">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsePnj1" aria-expanded="true" aria-controls="collapsePnj1">
+                                            <b>Oleg Leveton</b>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapsePnj1" class="collapse" aria-labelledby="headingPnj1" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <b>Fue</b> 11, <b>Des</b> 9, <b>Con</b> 10, <b>Int</b> 12, <b>Sab</b> 15, <b>Car</b> 8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingPnj2">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsePnj2" aria-expanded="false" aria-controls="collapsePnj2">
+                                            <b>Svetlana Leveton</b>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapsePnj2" class="collapse" aria-labelledby="headingPnj2" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <b>Fue</b> 9, <b>Des</b> 12, <b>Con</b> 11, <b>Int</b> 10, <b>Sab</b> 16, <b>Car</b> 8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingPnj3">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsePnj3" aria-expanded="false" aria-controls="collapsePnj3">
+                                            <b>Jhod Kavken</b>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapsePnj3" class="collapse" aria-labelledby="headingPnj3" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <b>Fue</b> 10, <b>Des</b> 8, <b>Con</b> 13, <b>Int</b> 12, <b>Sab</b> 18, <b>Car</b> 14
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingPnj4">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsePnj4" aria-expanded="false" aria-controls="collapsePnj4">
+                                            <b>Kesten Garess</b>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapsePnj4" class="collapse" aria-labelledby="headingPnj4" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <b>Fue</b> 17, <b>Des</b> 8, <b>Con</b> 13, <b>Int</b> 10, <b>Sab</b> 12, <b>Car</b> 14
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingPnj5">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsePnj5" aria-expanded="false" aria-controls="collapsePnj5">
+                                            <b>Bokken</b>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapsePnj5" class="collapse" aria-labelledby="headingPnj5" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <b>Fue</b> 9, <b>Des</b> 12, <b>Con</b> 11, <b>Int</b> 10, <b>Sab</b> 16, <b>Car</b> 8
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingPnj6">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsePnj6" aria-expanded="false" aria-controls="collapsePnj6">
+                                            <b>Akiros Ismort</b>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapsePnj6" class="collapse" aria-labelledby="headingPnj6" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <b>Fue</b> 14, <b>Des</b> 12, <b>Con</b> 16, <b>Int</b> 10, <b>Sab</b> 8, <b>Car</b> 15
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <em><b>Oleg Leveton</b></em> -->
+                        <!-- <br /><b>Fue</b> 11, <b>Des</b> 9, <b>Con</b> 10, <b>Int</b> 12, <b>Sab</b> 15, <b>Car</b> 8 -->
+                        <!-- <br /><em><b>Svetlana Leveton</b></em> -->
+                        <!-- <br /><b>Fue</b> 9, <b>Des</b> 12, <b>Con</b> 11, <b>Int</b> 10, <b>Sab</b> 16, <b>Car</b> 8 -->
+                        <!-- <br /><em><b>Jhod Kavken</b></em> -->
+                        <!-- <br /><b>Fue</b> 10, <b>Des</b> 8, <b>Con</b> 13, <b>Int</b> 12, <b>Sab</b> 18, <b>Car</b> 14 -->
+                        <!-- <br /><em><b>Kesten Garess</b></em> -->
+                        <!-- <br /><b>Fue</b> 17, <b>Des</b> 8, <b>Con</b> 13, <b>Int</b> 10, <b>Sab</b> 12, <b>Car</b> 14 -->
+                        <!-- <br /><em><b>Bokken</b></em> -->
+                        <!-- <br /><b>Fue</b> 9, <b>Des</b> 12, <b>Con</b> 11, <b>Int</b> 10, <b>Sab</b> 16, <b>Car</b> 8 -->
+                        <!-- <br /><em><b>Akiros Ismort</b></em> -->
+                        <!-- <br /><b>Fue</b> 14, <b>Des</b> 12, <b>Con</b> 16, <b>Int</b> 10, <b>Sab</b> 8, <b>Car</b> 15 -->
                     </p>
                 </div>
                 <div class="col-md-9">
