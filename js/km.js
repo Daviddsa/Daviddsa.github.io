@@ -20,7 +20,8 @@ function hayEncuentro() {
         "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
         + " --> LOS DATOS INTRODUCIDOS NO SON CORRECTOS";
     } else {
-        var posEncuentro = tiraDados(1, 100);
+        // var posEncuentro = tiraDados(1, 100);
+        var posEncuentro = 1;
         var encuentro = tiraDados(1, 100);
 
         if (getRadioValue("accion") == "explorar") {
