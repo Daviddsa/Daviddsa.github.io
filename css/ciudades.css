@@ -6,8 +6,8 @@
 }
 
 .borde-agua {
-    background-color: LightSkyBlue ;
-    color: LightSkyBlue ;
+    background-color: LightSkyBlue;
+    color: LightSkyBlue;
     text-align: center;
     border-style: none;
 }
@@ -15,4 +15,6 @@
 .manzana {
     background-color: lightgrey;
     color: lightgrey;
+    width: 105px;
+    height: 105px;
 }
