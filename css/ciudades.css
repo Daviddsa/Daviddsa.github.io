@@ -1,0 +1,18 @@
+.borde-tierra {
+    background-color: lightgreen;
+    color: lightgreen;
+    text-align: center;
+    border-style: none;
+}
+
+.borde-agua {
+    background-color: LightSkyBlue ;
+    color: LightSkyBlue ;
+    text-align: center;
+    border-style: none;
+}
+
+.manzana {
+    background-color: lightgrey;
+    color: lightgrey;
+}
