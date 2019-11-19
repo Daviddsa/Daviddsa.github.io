@@ -12,9 +12,30 @@
     border-style: none;
 }
 
-.manzana {
+.manzana1x1 {
     background-color: lightgrey;
     color: lightgrey;
     width: 105px;
     height: 105px;
+}
+
+.manzana1x2 {
+    background-color: lightgrey;
+    color: lightgrey;
+    width: 105px;
+    height: 210px;
+}
+
+.manzana2x1 {
+    background-color: lightgrey;
+    color: lightgrey;
+    width: 210px;
+    height: 105px;
+}
+
+.manzana2x2 {
+    background-color: lightgrey;
+    color: lightgrey;
+    width: 210px;
+    height: 210px;
 }
