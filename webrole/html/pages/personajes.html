@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="David Solsona">
+    <title>Web Rolera NaithT</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+    .jumbotron{
+        padding: 2.5rem 1rem 1rem 1rem;
+    }
+    .bd-placeholder-img {
+        font-size: 1.75rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .embed-container {
+        position: relative;
+        /* padding-bottom: 56.25%; */
+        padding-bottom: 105%;
+        /* margin-right: -14%; */
+        height: 0;
+        overflow: hidden;
+    }
+    .embed-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* CSS pantalla 768px o superior */
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+    </style>
+    <!-- Custom styles for this template -->
+    <!-- <link href="jumbotron.css" rel="stylesheet"> -->
+
+    <!-- Icons Material Design -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="/index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item"> -->
+                <!-- <a class="nav-link active" href="index.html">Inicio</a> -->
+                <!-- </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/pages/pc_gen.html">Generador PJs</a>
+                </li>
+                <!-- <li class="nav-item"> -->
+                <!-- <a class="nav-link" href="km.html">Generador PF: Kingmaker</a> -->
+                <!-- </li> -->
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PF: Kingmaker</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="/html/pages/km.html">Generador PF: Kingmaker</a>
+                        <a class="dropdown-item active" href="/html/pages/personajes.html">PF Kingmaker - Reino Vanrows</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Iván & D&D5e</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="/html/pages/toa.html">Generador Clima: Tumba de la Aniquilación</a>
+                        <a class="dropdown-item" href="/html/pages/toa_gen.html">Generador Encuentros: Tumba de la Aniquilación</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/html/pages/ivan.html">Test Iván</a>
+                        <!-- <a class="dropdown-item disabled" href="#">Something else here</a> -->
+                    </div>
+                </li>
+                <!-- <li class="nav-item"> -->
+                <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                <!-- </li> -->
+            </ul>
+
+            <p class="text-right text-white">&copy; David "NaithT" Solsona - 2019</p>
+        </div>
+    </nav>
+
+    <br />
+
+    <main role="main">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-6">¡Bienvenidos al directorio de personajes!</h1>
+                <p>Aquí encontraréis toda la información sobre los personajes que forman parte de la senda de aventuras Forjador de Reyes</p>
+                <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>PJs</h2>
+                    <p>
+                        <div class="card">
+                            <a class="btn btn-link card-header text-left disabled" href="#"><i class="material-icons">close</i> <em><b>Vanros</b></em> Clérigo 3</a>
+                            <a class="btn btn-link card-header text-left disabled" href="#"><i class="material-icons">close</i> <em><b>Faelyn</b></em> Maga 4</a>
+                            <a class="btn btn-link card-header text-left" href="/html/pjs/keryth.html"><i class="material-icons">check</i> <em><b>Keryth</b></em> Espadachín 5</a>
+                            <a class="btn btn-link card-header text-left" href="/html/pjs/ragarius.html"><i class="material-icons">check</i> <em><b>Ragarius</b></em> Exterminador 5</a>
+                            <a class="btn btn-link card-header text-left" href="/html/pjs/sajan.html"><i class="material-icons">check</i> <em><b>Sajan</b></em> Monje 5</a>
+                            <a class="btn btn-link card-header text-left" href="/html/pjs/shaka.html"><i class="material-icons">check</i> <em><b>Shaka</b></em> Explorador 5</a>
+                            <a class="btn btn-link card-header text-left" href="/html/pjs/throgall.html"><i class="material-icons">check</i> <em><b>Throgall</b></em> Rabioso de sangre 5</a>
+                        </div>
+                    </p>
+
+                    <h2>PNJs</h2>
+                    <p>
+                        <!-- <a href="/html/pnjs/oleg_leveton.html"><em><b>Oleg Leveton</b></em></a> -->
+                        <!-- <br /><a href="/html/pnjs/svetlana_leveton.html"><em><b>Svetlana Leveton</b></em></a> -->
+                        <!-- <br /><a href="/html/pnjs/jhod_kavken.html"><em><b>Jhod Kavken</b></em></a> -->
+                        <!-- <br /><a href="/html/pnjs/kesten_garess.html"><em><b>Kesten Garess</b></em></a> -->
+                        <!-- <br /><a href="/html/pnjs/bokken.html"><em><b>Bokken</b></em></a> -->
+                        <!-- <br /><a href="#"><em><b>Akiros Ismort</b></em></a> -->
+
+
+                        <div id="accordion" class="accordion">
+                            <div class="card">
+                                <button id="headingPnj1" class="card-header btn btn-link text-left" data-toggle="collapse" data-target="#collapsePnj1" aria-expanded="true" aria-controls="collapsePnj1">
+                                    <i class="material-icons">group</i> <em><b>Oleg Leveton</em></b>
+                                </button>
+                                <div id="collapsePnj1" class="collapse" aria-labelledby="headingPnj1" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <b>Fue</b> 11, <b>Des</b> 9, <b>Con</b> 10, <b>Int</b> 12, <b>Sab</b> 15, <b>Car</b> 8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <button id="headingPnj2" class="card-header btn btn-link text-left" data-toggle="collapse" data-target="#collapsePnj2" aria-expanded="true" aria-controls="collapsePnj2">
+                                    <i class="material-icons">group</i> <em><b>Svetlana Leveton</em></b>
+                                </button>
+                                <div id="collapsePnj2" class="collapse" aria-labelledby="headingPnj2" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <b>Fue</b> 9, <b>Des</b> 12, <b>Con</b> 11, <b>Int</b> 10, <b>Sab</b> 16, <b>Car</b> 8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <button id="headingPnj3" class="card-header btn btn-link text-left" data-toggle="collapse" data-target="#collapsePnj3" aria-expanded="true" aria-controls="collapsePnj3">
+                                    <i class="material-icons">group</i> <em><b>Jhod Kavken</em></b>
+                                </button>
+                                <div id="collapsePnj3" class="collapse" aria-labelledby="headingPnj3" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <b>Fue</b> 10, <b>Des</b> 8, <b>Con</b> 13, <b>Int</b> 12, <b>Sab</b> 18, <b>Car</b> 14
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <button id="headingPnj4" class="card-header btn btn-link text-left" data-toggle="collapse" data-target="#collapsePnj4" aria-expanded="true" aria-controls="collapsePnj4">
+                                    <i class="material-icons">group</i> <em><b>Kesten Garess</em></b>
+                                </button>
+                                <div id="collapsePnj4" class="collapse" aria-labelledby="headingPnj4" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <b>Fue</b> 17, <b>Des</b> 8, <b>Con</b> 13, <b>Int</b> 10, <b>Sab</b> 12, <b>Car</b> 14
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <button id="headingPnj5" class="card-header btn btn-link text-left" data-toggle="collapse" data-target="#collapsePnj5" aria-expanded="true" aria-controls="collapsePnj5">
+                                    <i class="material-icons">group</i> <em><b>Bokken</em></b>
+                                </button>
+                                <div id="collapsePnj5" class="collapse" aria-labelledby="headingPnj5" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <b>Fue</b> 9, <b>Des</b> 12, <b>Con</b> 11, <b>Int</b> 10, <b>Sab</b> 16, <b>Car</b> 8
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <button id="headingPnj6" class="card-header btn btn-link text-left" data-toggle="collapse" data-target="#collapsePnj6" aria-expanded="true" aria-controls="collapsePnj6">
+                                    <i class="material-icons">group</i> <em><b>Akiros Ismort</em></b>
+                                </button>
+                                <div id="collapsePnj6" class="collapse" aria-labelledby="headingPnj6" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <b>Fue</b> 14, <b>Des</b> 12, <b>Con</b> 16, <b>Int</b> 10, <b>Sab</b> 8, <b>Car</b> 15
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <button id="headingPnj7" class="card-header btn btn-link text-left" data-toggle="collapse" data-target="#collapsePnj7" aria-expanded="true" aria-controls="collapsePnj7">
+                                    <i class="material-icons">group</i> <em><b>Virnac Edmen (Erasmus)</em></b>
+                                </button>
+                                <div id="collapsePnj7" class="collapse" aria-labelledby="headingPnj7" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <b>Fue</b> 13, <b>Des</b> 13, <b>Con</b> 12, <b>Int</b> 10, <b>Sab</b> 9, <b>Car</b> 8
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <h2>Registro de aventuras</h2>
+                    <div class="embed-container">
+                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vR-YCO0WiN9NGWsOfRuojYFend6lI0MV3uLOn-fEHKy3XixDh1fowcc9JeDib2G0PmWGanknpOQBtae/pub?embedded=true"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <br>
+                    <br>
+                    <h2>Gestión reino</h2>
+                    <p>
+                        <div class="card">
+                            <a class="btn btn-link card-header text-left" href="https://drive.google.com/open?id=1PVAM6W6qIC5UEvCt5wi9HWAcLmz1KuzAYK79ln8drgw">Hoja del reino</a>
+                            <a class="btn btn-link card-header text-left" href="https://drive.google.com/open?id=1yNPEIuU3xqTa52INUnMZWq7bfBljXELwU4emrYvU95I">¿Cómo gestionar el reino?</a>
+
+                            <!-- <div class="row"> -->
+                                <!-- <div class="col-md-6"> -->
+                                    <!-- <a class="card-header btn btn-link text-left" data-toggle="collapse" href="#collapseRagaria" role="button" aria-expanded="false" aria-controls="collapseRagaria"> -->
+                                        <!-- <em><b>Ragaria</em></b> -->
+                                    <!-- </a> -->
+                                <!-- </div> -->
+
+                                <!-- <div class="collapse" id="collapseRagaria"> -->
+                                    <!-- <div class="card card-body"> -->
+                                        <!-- <a href="/html/pages/vanrows/ragaria_b1.html" target="_blank">Barrio 1</a> -->
+                                    <!-- </div> -->
+                                <!-- </div> -->
+
+                                <!-- <div class="col-md-6"> -->
+                                    <!-- <div class="col-md-6"> -->
+                                        <!-- <a class="card-header btn btn-link text-left" data-toggle="collapse" href="#collapseFaelyia" role="button" aria-expanded="false" aria-controls="collapseFaelyia"> -->
+                                            <!-- <em><b>Faelyia</em></b> -->
+                                        <!-- </a> -->
+                                    <!-- </div> -->
+
+                                    <!-- <div class="collapse" id="collapseFaelyia"> -->
+                                        <!-- <div class="card card-body"> -->
+                                            <!-- <a href="/html/pages/vanrows/faelyia_b1.html" target="_blank">Barrio 1</a> -->
+                                        <!-- </div> -->
+                                    <!-- </div> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+                        </div>
+
+                        <!-- Se comenta ya que aún no se ven bien las ciudades -->
+                        <!-- <table class="table table-borderless"> -->
+                            <!-- <tbody> -->
+                                <!-- <tr> -->
+                                    <!-- <th class="text-left"><em><b>Ragaria</b></em></th> -->
+                                    <!-- <td class="btn btn-link text-left"><a href="/html/pages/vanrows/ragaria_b1.html" target="_blank">Barrio 1</a></td> -->
+                                <!-- </tr> -->
+                                <!-- <tr> -->
+                                    <!-- <th class="text-left"><em><b>Faelyia</b></em></th> -->
+                                    <!-- <td class="btn btn-link text-left"><a href="/html/pages/vanrows/faelyia_b1.html" target="_blank">Barrio 1</a></td> -->
+                                <!-- </tr> -->
+                            <!-- </tbody> -->
+                        <!-- </table> -->
+                    </p>
+                </div>
+            </div>
+
+            <!-- <hr> -->
+        </div> <!-- /container -->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write("<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>")</script>
+    <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
