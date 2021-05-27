@@ -54,7 +54,7 @@ function hayEncuentro() {
             "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
             + " --> No hay encuentro.";
 
-            porAcumulado += posEncuentro;
+            porAcumulado += siEncuentro;
         }
     }
 }
