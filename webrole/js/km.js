@@ -43,7 +43,7 @@ function hayEncuentro() {
                 siEncuentro = 0;
         }
 
-        if (posEncuentro + porAcumulado <= siEncuentro) {
+        if (posEncuentro <= siEncuentro + porAcumulado) {
             document.getElementById("encuentro").innerHTML =
             "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
             + " --> ¡Hay encuentro! [" + posEncuentro + "+" + porAcumulado + "<=" + siEncuentro + " ?]" + infoEncuentro(encuentro, getRadioValue("parte"), getRadioValue("terreno"));
@@ -54,7 +54,7 @@ function hayEncuentro() {
             "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
             + " --> No hay encuentro.";
 
-            porAcumulado -= posEncuentro;
+            porAcumulado += posEncuentro;
         }
     }
 }
