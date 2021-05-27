@@ -1,13 +1,15 @@
 porAcumulado = 0;
 
 function checkDatos() {
-    if (getRadioValue("parte") == "1" && getRadioValue("terreno") != "bos" && getRadioValue("terreno") != "lag" && getRadioValue("terreno") != "lla" && getRadioValue("terreno") != "col") {
+    if (getRadioValue("parte") == "1" && getRadioValue("terreno") != "10" && getRadioValue("terreno") != "20" && getRadioValue("terreno") != "30" && getRadioValue("terreno") != "40") {
         return false;
-    } else if (getRadioValue("parte") == "2" && getRadioValue("terreno") != "bos" && getRadioValue("terreno") != "lag" && getRadioValue("terreno") != "lla" && getRadioValue("terreno") != "col") {
+    } else if (getRadioValue("parte") == "2" && getRadioValue("terreno") != "10" && getRadioValue("terreno") != "20" && getRadioValue("terreno") != "30" && getRadioValue("terreno") != "40") {
         return false;
-    } else if (getRadioValue("parte") == "3" && getRadioValue("terreno") != "mon" && getRadioValue("terreno") != "lag" && getRadioValue("terreno") != "lla" && getRadioValue("terreno") != "col") {
+    } else if (getRadioValue("parte") == "3" && getRadioValue("terreno") != "20" && getRadioValue("terreno") != "30" && getRadioValue("terreno") != "40" && getRadioValue("terreno") != "50") {
         return false;
-    } else if (getRadioValue("parte") == "4" && getRadioValue("terreno") != "pan" && getRadioValue("terreno") != "lag" && getRadioValue("terreno") != "lla" && getRadioValue("terreno") != "col") {
+    } else if (getRadioValue("parte") == "4" && getRadioValue("terreno") != "20" && getRadioValue("terreno") != "30" && getRadioValue("terreno") != "40" && getRadioValue("terreno") != "60") {
+        return false;
+    } else if (getRadioValue("parte") == "5" && getRadioValue("terreno") != "10" && getRadioValue("terreno") != "20" && getRadioValue("terreno") != "30" && getRadioValue("terreno") != "40" && getRadioValue("terreno") != "50") {
         return false;
     } else {
         return true;
@@ -20,48 +22,48 @@ function hayEncuentro() {
         "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
         + " --> LOS DATOS INTRODUCIDOS NO SON CORRECTOS";
     } else {
-        // var posEncuentro = tiraDados(1, 100);
-        var posEncuentro = 1;
+        var posEncuentro = tiraDados(1, 100);
         var encuentro = tiraDados(1, 100);
+        var siEncuentro = 0;
 
-        if (getRadioValue("accion") == "explorar") {
-            if (posEncuentro + porAcumulado <= 15) {
-                document.getElementById("encuentro").innerHTML =
-                "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
-                + " --> ¡Hay encuentro! El encuentro es: " + infoEncuentro(encuentro, getRadioValue("parte"), getRadioValue("terreno"));
+        switch (getRadioValue("accion")) {
+            case "viasal":
+            siEncuentro = 5;
+            break;
+            case "viarei":
+            siEncuentro = 1;
+            break;
+            case "expsal":
+            siEncuentro = 15;
+            break;
+            case "exprei":
+            siEncuentro = 5;
+            break;
+            default:
+                siEncuentro = 0;
+        }
 
-                porAcumulado = 0;
-            } else {
-                document.getElementById("encuentro").innerHTML =
-                "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
-                + " --> No hay encuentro.";
+        if (posEncuentro + porAcumulado <= siEncuentro) {
+            document.getElementById("encuentro").innerHTML =
+            "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
+            + " --> ¡Hay encuentro! El encuentro es: " + infoEncuentro(encuentro, getRadioValue("parte"), getRadioValue("terreno"));
 
-                porAcumulado = porAcumulado - 15;
-            }
+            porAcumulado = 0;
         } else {
-            if (posEncuentro + porAcumulado <= 5) {
-                document.getElementById("encuentro").innerHTML =
-                "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
-                + " --> ¡Hay encuentro! El encuentro es: " + infoEncuentro(encuentro, getRadioValue("parte"), getRadioValue("terreno"));
+            document.getElementById("encuentro").innerHTML =
+            "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
+            + " --> No hay encuentro.";
 
-                porAcumulado = 0;
-            } else {
-                document.getElementById("encuentro").innerHTML =
-                "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
-                + " --> No hay encuentro.";
-
-                porAcumulado = porAcumulado - 5;
-            }
+            porAcumulado -= posEncuentro;
         }
     }
-
 }
 
 function infoEncuentro(encuentro, libro, terreno) {
     switch (libro) {
         case "1":
         switch (terreno) {
-            case "bos":
+            case "10":
             if (encuentro <= 4) {
                 return tiraDados(1, 6) + " bandido(s).";
             } else if (encuentro <= 11) {
@@ -104,7 +106,7 @@ function infoEncuentro(encuentro, libro, terreno) {
                 return "1 huargo.";
             }
             break;
-            case "lag":
+            case "20":
             if (encuentro <= 5) {
                 return tiraDados(1, 6) + " bandido(s).";
             } else if (encuentro <= 11) {
@@ -143,7 +145,7 @@ function infoEncuentro(encuentro, libro, terreno) {
                 return "1 huargo.";
             }
             break;
-            case "lla":
+            case "30":
             if (encuentro <= 6) {
                 return tiraDados(1, 6) + " bandido(s).";
             } else if (encuentro <= 15) {
@@ -184,7 +186,7 @@ function infoEncuentro(encuentro, libro, terreno) {
                 return "1 huargo.";
             }
             break;
-            case "col":
+            case "40":
             if (encuentro <= 8) {
                 return tiraDados(1, 6) + " bandido(s).";
             } else if (encuentro <= 14) {
@@ -230,7 +232,7 @@ function infoEncuentro(encuentro, libro, terreno) {
         break;
         case "2":
         switch (terreno) {
-            case "bos":
+            case "10":
             if (encuentro <= 5) {
                 return "1 barghest.";
             } else if (encuentro <= 13) {
@@ -273,7 +275,7 @@ function infoEncuentro(encuentro, libro, terreno) {
                 return "1 wyvern.";
             }
             break;
-            case "lag":
+            case "20":
             if (encuentro <= 3) {
                 return "1 barghest.";
             } else if (encuentro <= 10) {
@@ -314,7 +316,7 @@ function infoEncuentro(encuentro, libro, terreno) {
                 return "1 wyvern.";
             }
             break;
-            case "lla":
+            case "30":
             if (encuentro <= 4) {
                 return "1 barghest.";
             } else if (encuentro <= 15) {
@@ -353,7 +355,7 @@ function infoEncuentro(encuentro, libro, terreno) {
                 return "1 wyvern.";
             }
             break;
-            case "col":
+            case "40":
             if (encuentro <= 7) {
                 return "1 barghest.";
             } else if (encuentro <= 14) {

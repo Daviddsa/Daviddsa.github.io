@@ -80,19 +80,21 @@
                 </div>
                 <div class="col-md-5">
                     <p><strong>Indica el tipo de terreno:</strong>
-                        <br /><input type="radio" name="terreno" value="bos" checked> Bosque
-                        <br /><input type="radio" name="terreno" value="lag"> Lago/Río
-                        <br /><input type="radio" name="terreno" value="lla"> Llanura
-                        <br /><input type="radio" name="terreno" value="col"> Colina
-                        <br /><input type="radio" name="terreno" value="mon"> Montaña
-                        <br /><input type="radio" name="terreno" value="pan"> Pantano
+                        <br /><input type="radio" name="terreno" value="10" checked> Bosque
+                        <br /><input type="radio" name="terreno" value="20"> Lago/Río
+                        <br /><input type="radio" name="terreno" value="30"> Llanura
+                        <br /><input type="radio" name="terreno" value="40"> Colina
+                        <br /><input type="radio" name="terreno" value="50"> Montaña
+                        <br /><input type="radio" name="terreno" value="60"> Pantano
                     </p>
                 </div>
-                <!-- <div class="col-md-4"> -->
-                <!-- <p><strong>Indica si vas a explorar o solo atravesar:</strong> -->
-                <!-- <br /><input type="radio" name="accion" value="atravesar" checked> Atravesar -->
-                <!-- <br /><input type="radio" name="accion" value="explorar"> Explorar -->
-                <!-- </p> -->
+                <div class="col-md-4">
+                <p><strong>¿Qué vas a hacer?</strong>
+                <br /><input type="radio" name="accion" value="viasal" checked> Atravesar salvaje
+                <br /><input type="radio" name="accion" value="viarei"> Atravesar reino
+                <br /><input type="radio" name="accion" value="expsal"> Explorar/noche salvaje
+                <br /><input type="radio" name="accion" value="exprei"> Explorar/noche reino
+                </p>
 
                 <br /><br /><button type="button" class="btn btn-primary" onclick="hayEncuentro()">Calcular</button>
                 <!-- </div> -->
@@ -111,7 +113,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
         <!-- Scripts personalizados -->
-        <script src="/js/km.js"></script>
-        <script src="/js/utils.js"></script>
+        <script src="/webrole/js/km.js"></script>
+        <script src="/webrole/js/utils.js"></script>
     </body>
     </html>
