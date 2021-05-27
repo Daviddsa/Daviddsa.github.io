@@ -46,7 +46,7 @@ function hayEncuentro() {
         if (posEncuentro <= siEncuentro + porAcumulado) {
             document.getElementById("encuentro").innerHTML =
             "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
-            + " --> ¡Hay encuentro! [" + posEncuentro + "+" + porAcumulado + "<=" + siEncuentro + " ?]" + infoEncuentro(encuentro, getRadioValue("parte"), getRadioValue("terreno"));
+            + " --> ¡Hay encuentro! [" + posEncuentro + "<=" + porAcumulado + "+" + siEncuentro + " ?]" + infoEncuentro(encuentro, getRadioValue("parte"), getRadioValue("terreno"));
 
             porAcumulado = 0;
         } else {
