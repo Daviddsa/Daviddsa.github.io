@@ -48,11 +48,15 @@ function hayEncuentro() {
             "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
             + " --> ¡Hay encuentro! " + infoEncuentro(encuentro, getRadioValue("parte"), getRadioValue("terreno"));
 
+            console.log("Porcentajes: " + posEncuentro + "<="  + siEncuentro + "+" + porAcumulado);
+
             porAcumulado = 0;
         } else {
             document.getElementById("encuentro").innerHTML =
             "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
             + " --> No hay encuentro.";
+
+            console.log("Porcentajes: " + posEncuentro + "<="  + siEncuentro + "+" + porAcumulado);
 
             porAcumulado += siEncuentro;
         }
