@@ -278,7 +278,7 @@ function infoEncuentro(encuentro, libro, terreno) {
                     return "1 wyvern.";
                 }
                     break;
-                    case "20":
+                case "20":
             if (encuentro <= 3) {
                 return "1 barghest.";
             } else if (encuentro <= 10) {
@@ -319,7 +319,7 @@ function infoEncuentro(encuentro, libro, terreno) {
                 return "1 wyvern.";
             }
                     break;
-                    case "30":
+                case "30":
             if (encuentro <= 4) {
                 return "1 barghest.";
             } else if (encuentro <= 15) {
@@ -358,7 +358,7 @@ function infoEncuentro(encuentro, libro, terreno) {
                 return "1 wyvern.";
             }
                     break;
-                    case "40":
+                case "40":
             if (encuentro <= 7) {
                 return "1 barghest.";
             } else if (encuentro <= 14) {
@@ -395,7 +395,7 @@ function infoEncuentro(encuentro, libro, terreno) {
                 return "1 wyvern.";
             }
                     break;
-                    default:
+                default:
                     alert("Respuesta incorrecta");
                 }
             break;
@@ -537,8 +537,8 @@ function infoEncuentro(encuentro, libro, terreno) {
                         return "1 dragon de plata.";
                     }
                     break;
-                    default:
-                        alert("Respuesta incorrecta");
+                default:
+                    alert("Respuesta incorrecta");
                 }
             break;
             // TODO: Seguir rellenando tablas de Encuentros
