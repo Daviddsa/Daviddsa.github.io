@@ -23,7 +23,7 @@ function hayEncuentro() {
         + " --> LOS DATOS INTRODUCIDOS NO SON CORRECTOS";
     } else {
         var posEncuentro = tiraDados(1, 100);
-        var encuentro = tiraDados(1, 100);
+        // var encuentro = tiraDados(1, 100);
         var siEncuentro = 0;
 
         switch (getRadioValue("accion")) {
@@ -46,7 +46,7 @@ function hayEncuentro() {
         if (posEncuentro <= siEncuentro + porAcumulado) {
             document.getElementById("encuentro").innerHTML =
             "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
-            + " --> ¡Hay encuentro! " + infoEncuentro(encuentro, getRadioValue("parte"), getRadioValue("terreno"));
+            + " --> ¡Hay encuentro! " + infoEncuentro(tiraDados(1, 100), getRadioValue("parte"), getRadioValue("terreno"));
 
             console.log("Porcentajes: " + posEncuentro + "<="  + siEncuentro + "+" + porAcumulado);
 
