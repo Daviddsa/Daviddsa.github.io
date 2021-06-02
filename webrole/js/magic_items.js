@@ -28,7 +28,7 @@ function randomMagicItem(rareza, repeticiones) {
         switch (rareza) {
             case 1:
                 if (tirada <= 4) {
-                    randomArmaduraEscudo();
+                    randomArmaduraEscudo(0, 1);
 
                     console.log("Armaduras y escudos");
                 } else if (tirada <= 9) {
@@ -60,7 +60,7 @@ function randomMagicItem(rareza, repeticiones) {
                 break;
             case 2:
                 if (tirada <= 10) {
-                    randomArmaduraEscudo();
+                    randomArmaduraEscudo(0, 2);
 
                     console.log("Armaduras y escudos");
                 } else if (tirada <= 20) {
@@ -99,7 +99,7 @@ function randomMagicItem(rareza, repeticiones) {
                 break;
             case 3:
                 if (tirada <= 10) {
-                    randomArmaduraEscudo();
+                    randomArmaduraEscudo(0, 3);
 
                     console.log("Armaduras y escudos");
                 } else if (tirada <= 20) {
@@ -142,8 +142,75 @@ function randomMagicItem(rareza, repeticiones) {
     }
 }
 
-function randomArmaduraEscudo() {
+function randomArmaduraEscudo(itera_bucle, rareza) {
+    var item = "";
+    var material = "";
+    var mejora = 0;
+    var cont_aptitudes = 0;
 
+    var tirada = tiraDados(1,100);
+
+    switch (rareza) {
+        case 1:
+            if (tirada <= 60) {
+                itera_bucle = 0;
+
+                item = "Escudo";
+                mejora = 1;
+            } else if (tirada <= 80) {
+                itera_bucle = 0;
+
+                item = "Armadura";
+                mejora = 1;
+            } else if (tirada <= 85) {
+                itera_bucle = 0;
+
+                item = "Escudo";
+                mejora = 2;
+            } else if (tirada <= 87) {
+                itera_bucle = 0;
+
+                item = "Armadura";
+                mejora = 2;
+            } else if (tirada <= 89) {
+                itera_bucle = 1;
+
+                // TODO: Armadura específica
+            } else if (tirada <= 91) {
+                itera_bucle = 1;
+
+                // TODO: Escudo específico
+            } else {
+                cont_aptitudes++;
+
+                randomArmaduraEscudo(1);
+            }
+
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        default:
+
+    }
+
+    // TODO: Materiales especiales
+
+    if (itera_bucle = 0) {
+        document.getElementById("objetos").innerHTML =  document.getElementById("objetos").innerHTML + " <br> " + item + material + " +" + mejora + " ";
+    }
+
+    for (var i = 0; i < cont_aptitudes; i++) {
+        document.getElementById("objetos").innerHTML =  document.getElementById("objetos").innerHTML + aptitudArmadura();
+    }
+
+}
+
+function aptitudArmadura() {
+    var resultado = "";
+
+    return resultado;
 }
 
 function randomArma() {
