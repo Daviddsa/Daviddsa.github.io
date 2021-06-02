@@ -157,29 +157,39 @@ function randomArmaduraEscudo(itera_bucle, rareza) {
 
                 item = "Escudo";
                 mejora = 1;
+
+                console.log("Escudo +1");
             } else if (tirada <= 80) {
                 itera_bucle = 0;
 
                 item = "Armadura";
                 mejora = 1;
+
+                console.log("Armadura +1");
             } else if (tirada <= 85) {
                 itera_bucle = 0;
 
                 item = "Escudo";
                 mejora = 2;
+
+                console.log("Escudo +2");
             } else if (tirada <= 87) {
                 itera_bucle = 0;
 
                 item = "Armadura";
                 mejora = 2;
+
+                console.log("Armadura +2");
             } else if (tirada <= 89) {
                 itera_bucle = 1;
 
                 // TODO: Armadura específica
+                console.log("Armadura esp.");
             } else if (tirada <= 91) {
                 itera_bucle = 1;
 
                 // TODO: Escudo específico
+                console.log("Escudo esp.");
             } else {
                 cont_aptitudes++;
 
@@ -209,6 +219,8 @@ function randomArmaduraEscudo(itera_bucle, rareza) {
 
 function aptitudArmadura() {
     var resultado = "";
+
+    console.log("aptitud++");
 
     return resultado;
 }
