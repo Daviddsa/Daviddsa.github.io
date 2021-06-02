@@ -3,19 +3,19 @@ function generaObjetos() {
     "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"});
 
     if (document.getElementById("obj_menor").value > 0) {
-        document.getElementById("objetos").innerHTML =  document.getElementById("objetos").innerHTML + " <br>Menor: ";
+        document.getElementById("objetos").innerHTML =  document.getElementById("objetos").innerHTML + " <br>Menores: ";
 
         randomMagicItem(1, document.getElementById("obj_menor").value);
     }
 
     if (document.getElementById("obj_medio").value > 0) {
-        document.getElementById("objetos").innerHTML =  document.getElementById("objetos").innerHTML + " <br>Intermedio: ";
+        document.getElementById("objetos").innerHTML =  document.getElementById("objetos").innerHTML + " <br>Intermedios: ";
 
         randomMagicItem(2, document.getElementById("obj_medio").value);
     }
 
     if (document.getElementById("obj_mayor").value > 0) {
-        document.getElementById("objetos").innerHTML =  document.getElementById("objetos").innerHTML + " <br>Mayor: ";
+        document.getElementById("objetos").innerHTML =  document.getElementById("objetos").innerHTML + " <br>Mayores: ";
 
         randomMagicItem(3, document.getElementById("obj_mayor").value);
     }
