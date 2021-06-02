@@ -193,7 +193,7 @@ function randomArmaduraEscudo(itera_bucle, rareza) {
         } else {
             cont_aptitudes++;
 
-            randomArmaduraEscudo(1);
+            randomArmaduraEscudo(1, rareza);
         }
 
         break;
