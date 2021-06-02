@@ -28,112 +28,86 @@ function randomMagicItem(rareza, repeticiones) {
         switch (rareza) {
             case 1:
                 if (tirada <= 4) {
-                    randomArmaduraEscudo(0, 1);
-
                     console.log("Armaduras y escudos");
+                    randomArmaduraEscudo(0, 1);
                 } else if (tirada <= 9) {
-                    randomArma();
-
                     console.log("Armas");
+                    randomArma();
                 } else if (tirada <= 44) {
-                    randomPocion();
-
                     console.log("Pociones");
+                    randomPocion();
                 } else if (tirada <= 46) {
-                    randomAnillo();
-
                     console.log("Anillos");
+                    randomAnillo();
                 } else if (tirada <= 81) {
-                    randomPergamino();
-
                     console.log("Pergaminos");
+                    randomPergamino();
                 } else if (tirada <= 91) {
-                    randomVarita();
-
                     console.log("Varitas");
+                    randomVarita();
                 } else {
-                    randomObjetoMaravilloso();
-
                     console.log("Objetos maravillosos");
+                    randomObjetoMaravilloso();
                 }
-
                 break;
             case 2:
                 if (tirada <= 10) {
-                    randomArmaduraEscudo(0, 2);
-
                     console.log("Armaduras y escudos");
+                    randomArmaduraEscudo(0, 2);
                 } else if (tirada <= 20) {
-                    randomArma();
-
                     console.log("Armas");
+                    randomArma();
                 } else if (tirada <= 30) {
-                    randomPocion();
-
                     console.log("Pociones");
+                    randomPocion();
                 } else if (tirada <= 40) {
-                    randomAnillo();
-
                     console.log("Anillos");
+                    randomAnillo();
                 } else if (tirada <= 50) {
-                    RandomCetro();
-
                     console.log("Cetros");
+                    randomCetro();
                 } else if (tirada <= 65) {
-                    randomPergamino();
-
                     console.log("Pergaminos");
+                    randomPergamino();
                 } else if (tirada <= 68) {
-                    randomBaston();
-
                     console.log("Bastones");
+                    randomBaston();
                 } else if (tirada <= 83) {
-                    randomVarita();
-
                     console.log("Varitas");
+                    randomVarita();
                 } else {
-                    randomObjetoMaravilloso();
-
                     console.log("Objetos maravillosos");
+                    randomObjetoMaravilloso();
                 }
                 break;
             case 3:
                 if (tirada <= 10) {
-                    randomArmaduraEscudo(0, 3);
-
                     console.log("Armaduras y escudos");
+                    randomArmaduraEscudo(0, 3);
                 } else if (tirada <= 20) {
-                    randomArma();
-
                     console.log("Armas");
+                    randomArma();
                 } else if (tirada <= 25) {
-                    randomPocion();
-
                     console.log("Pociones");
+                    randomPocion();
                 } else if (tirada <= 35) {
-                    randomAnillo();
-
                     console.log("Anillos");
+                    randomAnillo();
                 } else if (tirada <= 45) {
-                    RandomCetro();
-
                     console.log("Cetros");
+                    randomCetro();
                 } else if (tirada <= 55) {
-                    randomPergamino();
-
                     console.log("Pergaminos");
+                    randomPergamino();
                 } else if (tirada <= 75) {
-                    randomBaston();
-
                     console.log("Bastones");
+                    randomBaston();
                 } else if (tirada <= 80) {
-                    randomVarita();
-
                     console.log("Varitas");
+                    randomVarita();
                 } else {
-                    randomObjetoMaravilloso();
-
                     console.log("Objetos maravillosos");
+                    randomObjetoMaravilloso();
                 }
                 break;
             default:
@@ -158,38 +132,38 @@ function randomArmaduraEscudo(itera_bucle, rareza) {
                 item = "Escudo";
                 mejora = 1;
 
-                console.log("Escudo +1");
+                console.log("- Escudo +1");
             } else if (tirada <= 80) {
                 itera_bucle = 0;
 
                 item = "Armadura";
                 mejora = 1;
 
-                console.log("Armadura +1");
+                console.log("- Armadura +1");
             } else if (tirada <= 85) {
                 itera_bucle = 0;
 
                 item = "Escudo";
                 mejora = 2;
 
-                console.log("Escudo +2");
+                console.log("- Escudo +2");
             } else if (tirada <= 87) {
                 itera_bucle = 0;
 
                 item = "Armadura";
                 mejora = 2;
 
-                console.log("Armadura +2");
+                console.log("- Armadura +2");
             } else if (tirada <= 89) {
                 itera_bucle = 1;
 
                 // TODO: Armadura específica
-                console.log("Armadura esp.");
+                console.log("- Armadura esp.");
             } else if (tirada <= 91) {
                 itera_bucle = 1;
 
                 // TODO: Escudo específico
-                console.log("Escudo esp.");
+                console.log("- Escudo esp.");
             } else {
                 cont_aptitudes++;
 
