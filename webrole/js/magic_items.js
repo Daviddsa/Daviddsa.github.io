@@ -54,7 +54,7 @@ function randomMagicItem(rareza, repeticiones) {
             case 1:
             if (tirada <= 4) {
                 console.log("Armaduras y escudos");
-                randomArmaduraEscudo(0, 1);
+                randomArmaduraEscudo(0, rareza);
             } else if (tirada <= 9) {
                 console.log("Armas");
                 randomArma();
@@ -78,7 +78,7 @@ function randomMagicItem(rareza, repeticiones) {
             case 2:
             if (tirada <= 10) {
                 console.log("Armaduras y escudos");
-                randomArmaduraEscudo(0, 2);
+                randomArmaduraEscudo(0, rareza);
             } else if (tirada <= 20) {
                 console.log("Armas");
                 randomArma();
@@ -108,7 +108,7 @@ function randomMagicItem(rareza, repeticiones) {
             case 3:
             if (tirada <= 10) {
                 console.log("Armaduras y escudos");
-                randomArmaduraEscudo(0, 3);
+                randomArmaduraEscudo(0, rareza);
             } else if (tirada <= 20) {
                 console.log("Armas");
                 randomArma();
@@ -212,12 +212,12 @@ function randomArmaduraEscudo(itera_bucle, rareza) {
     }
 
     for (var i = 0; i < cont_aptitudes; i++) {
-        document.getElementById("objetos").innerHTML =  document.getElementById("objetos").innerHTML + aptitudArmadura();
+        document.getElementById("objetos").innerHTML =  document.getElementById("objetos").innerHTML + aptitudArmadura(rareza);
     }
 
 }
 
-function aptitudArmadura() {
+function aptitudArmadura(rareza) {
     var resultado = "";
 
     console.log("aptitud++");
