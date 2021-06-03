@@ -208,19 +208,51 @@ function randomArmaduraEscudo(itera_bucle, rareza) {
     // TODO: Materiales especiales
 
     if (itera_bucle = 0) {
-        document.getElementById("objetos").innerHTML =  document.getElementById("objetos").innerHTML + " <br> " + item + material + " +" + mejora + " ";
+        document.getElementById("objetos").innerHTML = document.getElementById("objetos").innerHTML + " <br> " + item + material + " +" + mejora + " ";
     }
 
-    for (var i = 0; i < cont_aptitudes; i++) {
-        document.getElementById("objetos").innerHTML =  document.getElementById("objetos").innerHTML + aptitudArmadura(rareza);
+    if (item = 'Armadura') {
+        for (var i = 0; i < cont_aptitudes; i++) {
+            document.getElementById("objetos").innerHTML = document.getElementById("objetos").innerHTML + aptitudArmadura(rareza);
+        }
+    } else if (item = 'Escudo') {
+        for (var i = 0; i < cont_aptitudes; i++) {
+            document.getElementById("objetos").innerHTML = document.getElementById("objetos").innerHTML + aptitudEscudo(rareza);
+        }
     }
+
 
 }
 
 function aptitudArmadura(rareza) {
-    var resultado = "";
+    var resultado = '';
+    var tirada = tiraDados(1,100);
 
     console.log("aptitud++");
+
+    switch (rareza) {
+        case 1:
+        if (tirada <= 25) {
+            resultado = 'Ilusoria ';
+        } else if (tirada <= 32) {
+            resultado = 'Fortificante leve ';
+        } else if (tirada <= 52) {
+            resultado = 'Resbaladiza ';
+        } else if (tirada <= 92) {
+            resultado = 'De las sombras ';
+        } else if (tirada <= 96) {
+            resultado = 'Resistente a conjuros (13) ';
+        } else if (tirada <= 97) {
+            resultado = 'Resbaladiza mejorada ';
+        } else if (tirada <= 99) {
+            resultado = 'De las sombras mejorada ';
+        } else {
+            resultado = aptitudArmadura(rareza) + aptitudArmadura(rareza);
+        }
+            break;
+        default:
+
+    }
 
     return resultado;
 }
