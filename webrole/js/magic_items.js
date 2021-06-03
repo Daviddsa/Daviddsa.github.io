@@ -207,15 +207,15 @@ function randomArmaduraEscudo(itera_bucle, rareza) {
 
     // TODO: Materiales especiales
 
-    if (itera_bucle = 0) {
+    if (itera_bucle == 0) {
         document.getElementById("objetos").innerHTML = document.getElementById("objetos").innerHTML + " <br> " + item + material + " +" + mejora + " ";
     }
 
-    if (item = 'Armadura') {
+    if (item == 'Armadura') {
         for (var i = 0; i < cont_aptitudes; i++) {
             document.getElementById("objetos").innerHTML = document.getElementById("objetos").innerHTML + aptitudArmadura(rareza);
         }
-    } else if (item = 'Escudo') {
+    } else if (item == 'Escudo') {
         for (var i = 0; i < cont_aptitudes; i++) {
             document.getElementById("objetos").innerHTML = document.getElementById("objetos").innerHTML + aptitudEscudo(rareza);
         }
@@ -249,7 +249,7 @@ function aptitudArmadura(rareza) {
         } else {
             resultado = aptitudArmadura(rareza) + aptitudArmadura(rareza);
         }
-            break;
+        break;
         default:
 
     }
@@ -258,7 +258,7 @@ function aptitudArmadura(rareza) {
 }
 
 function aptitudEscudo(rareza) {
-    
+
 }
 
 function randomArma() {
