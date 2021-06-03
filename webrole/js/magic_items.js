@@ -40,7 +40,7 @@ function getMaterial(tipo) {
 
                 break;
                 default:
-
+                return material;
             }
         }
     } else {
