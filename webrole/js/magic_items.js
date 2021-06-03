@@ -257,6 +257,10 @@ function aptitudArmadura(rareza) {
     return resultado;
 }
 
+function aptitudEscudo(rareza) {
+    
+}
+
 function randomArma() {
 
 }
