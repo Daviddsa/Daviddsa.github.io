@@ -1,6 +1,6 @@
 function generaObjetos() {
     document.getElementById("objetos").innerHTML =
-    "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"});
+    "<br>" + new Date().toLocaleTimeString("es-ES", { hour: "numeric", minute: "numeric", second: "numeric"});
 
     if (document.getElementById("obj_menor").value > 0) {
         document.getElementById("objetos").innerHTML =  document.getElementById("objetos").innerHTML + " <br>Menores: ";
@@ -22,6 +22,8 @@ function generaObjetos() {
 }
 
 function getMaterial(tipo) {
+    var material = "";
+
     if (tiraDados(1,100) >= 96) {
         switch (tipo) {
             case 1:
@@ -42,7 +44,7 @@ function getMaterial(tipo) {
             }
         }
     } else {
-        return "";
+        return material;
     }
 }
 
@@ -211,11 +213,11 @@ function randomArmaduraEscudo(itera_bucle, rareza) {
         document.getElementById("objetos").innerHTML = document.getElementById("objetos").innerHTML + " <br> " + item + material + " +" + mejora + " ";
     }
 
-    if (item == 'Armadura') {
+    if (item == "Armadura") {
         for (var i = 0; i < cont_aptitudes; i++) {
             document.getElementById("objetos").innerHTML = document.getElementById("objetos").innerHTML + aptitudArmadura(rareza);
         }
-    } else if (item == 'Escudo') {
+    } else if (item == "Escudo") {
         for (var i = 0; i < cont_aptitudes; i++) {
             document.getElementById("objetos").innerHTML = document.getElementById("objetos").innerHTML + aptitudEscudo(rareza);
         }
@@ -225,7 +227,7 @@ function randomArmaduraEscudo(itera_bucle, rareza) {
 }
 
 function aptitudArmadura(rareza) {
-    var resultado = '';
+    var resultado = "";
     var tirada = tiraDados(1,100);
 
     console.log("aptitud++");
@@ -233,19 +235,19 @@ function aptitudArmadura(rareza) {
     switch (rareza) {
         case 1:
         if (tirada <= 25) {
-            resultado = 'Ilusoria ';
+            resultado = "Ilusoria ";
         } else if (tirada <= 32) {
-            resultado = 'Fortificante leve ';
+            resultado = "Fortificante leve ";
         } else if (tirada <= 52) {
-            resultado = 'Resbaladiza ';
+            resultado = "Resbaladiza ";
         } else if (tirada <= 92) {
-            resultado = 'De las sombras ';
+            resultado = "De las sombras ";
         } else if (tirada <= 96) {
-            resultado = 'Resistente a conjuros (13) ';
+            resultado = "Resistente a conjuros (13) ";
         } else if (tirada <= 97) {
-            resultado = 'Resbaladiza mejorada ';
+            resultado = "Resbaladiza mejorada ";
         } else if (tirada <= 99) {
-            resultado = 'De las sombras mejorada ';
+            resultado = "De las sombras mejorada ";
         } else {
             resultado = aptitudArmadura(rareza) + aptitudArmadura(rareza);
         }
