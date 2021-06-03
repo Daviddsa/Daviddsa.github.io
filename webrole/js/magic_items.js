@@ -265,7 +265,36 @@ function aptitudArmadura(rareza) {
 }
 
 function aptitudEscudo(rareza) {
+    var resultado = "";
+    var tirada = tiraDados(1,100);
 
+    console.log("aptitud++");
+
+    switch (rareza) {
+        case 1:
+        if (tirada <= 20) {
+            resultado = "Atrapador de flechas ";
+        } else if (tirada <= 40) {
+            resultado = "Golpeador ";
+        } else if (tirada <= 50) {
+            resultado = "Cegador ";
+        } else if (tirada <= 75) {
+            resultado = "Fortificante leve ";
+        } else if (tirada <= 92) {
+            resultado = "Desviador de flechas ";
+        } else if (tirada <= 97) {
+            resultado = "Animado ";
+        } else if (tirada <= 99) {
+            resultado = "Resistente a conjuros (13) ";
+        } else {
+            resultado = aptitudEscudo(rareza) + aptitudEscudo(rareza);
+        }
+        break;
+        default:
+
+    }
+
+    return resultado;
 }
 
 function randomArma() {
