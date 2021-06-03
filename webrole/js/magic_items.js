@@ -21,6 +21,7 @@ function generaObjetos() {
     }
 }
 
+// Obtiene material del objeto
 function getMaterial(tipo) {
     var material = "";
 
@@ -48,6 +49,7 @@ function getMaterial(tipo) {
     }
 }
 
+// Obtiene el objeto en sí, con sus carácteristicas
 function randomMagicItem(rareza, repeticiones) {
     for (var i = 0; i < repeticiones; i++) {
         var tirada = tiraDados(1,100);
@@ -143,6 +145,7 @@ function randomMagicItem(rareza, repeticiones) {
     }
 }
 
+// Obtiene Armaduras y Escudos
 function randomArmaduraEscudo(itera_bucle, rareza) {
     var item = "";
     var material = "";
@@ -210,7 +213,9 @@ function randomArmaduraEscudo(itera_bucle, rareza) {
     // TODO: Materiales especiales
 
     if (itera_bucle == 0) {
-        document.getElementById("objetos").innerHTML = document.getElementById("objetos").innerHTML + " <br> " + item + material + " +" + mejora + " ";
+        if (mejora > 0) {
+            document.getElementById("objetos").innerHTML = document.getElementById("objetos").innerHTML + " <br> " + item + material + " +" + mejora + " ";
+        }
     }
 
     if (item == "Armadura") {
