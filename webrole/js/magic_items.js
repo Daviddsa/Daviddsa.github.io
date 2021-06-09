@@ -228,7 +228,7 @@ function randomArmaduraEscudo(itera_bucle, rareza) {
         }
     }
 
-
+    document.getElementById("objetos").innerHTML = document.getElementById("objetos").innerHTML + ", ";
 }
 
 function aptitudArmadura(rareza) {
@@ -325,6 +325,23 @@ function randomVarita() {
 
 }
 
-function randomObjetoMaravilloso() {
+function randomObjetoMaravilloso(rareza) {
+    var tirada = tiraDados(1,100);
 
+    switch (rareza) {
+        case 1:
+        switch (tirada) {
+            case 1:
+            document.getElementById("objetos").innerHTML = document.getElementById("objetos").innerHTML + "Disolvente universal (50 po), ";
+            break;
+            case 2:
+            document.getElementById("objetos").innerHTML = document.getElementById("objetos").innerHTML + "Fetiche de plumas (ancla) (50 po), ";
+            break;
+            default:
+
+        }
+        break;
+        default:
+
+    }
 }
