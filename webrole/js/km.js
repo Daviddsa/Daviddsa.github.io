@@ -94,7 +94,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 11) {
                 return tiraDados(1, 4) + " jabalí(es). [Bestiario 1, 187]";
             } else if (encuentro <= 14) {
-                return tiraDados(1, 4) + " boggard(s).  [Bestiario 1, 41]";
+                return tiraDados(1, 4) + " boggard(s). [Bestiario 1, 41]";
             } else if (encuentro <= 20) {
                 return "1 lobo marsupial.";
             } else if (encuentro <= 29) {
@@ -137,7 +137,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 11) {
                 return tiraDados(1, 4) + " jabalí(es). [Bestiario 1, 187]";
             } else if (encuentro <= 17) {
-                return tiraDados(1, 4) + " boggard(s).  [Bestiario 1, 41]";
+                return tiraDados(1, 4) + " boggard(s). [Bestiario 1, 41]";
             } else if (encuentro <= 21) {
                 return "1 lobo marsupial.";
             } else if (encuentro <= 28) {
@@ -262,7 +262,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 13) {
                 return tiraDados(1, 8) + " jabalí(es). [Bestiario 1, 187]";
             } else if (encuentro <= 17) {
-                return tiraDados(2, 4) + " boggards.  [Bestiario 1, 41]";
+                return tiraDados(2, 4) + " boggards. [Bestiario 1, 41]";
             } else if (encuentro <= 23) {
                 return tiraDados(1, 6) + " lobo(s) marsupial(es) de la maleza.";
             } else if (encuentro <= 29) {
@@ -305,7 +305,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 10) {
                 return tiraDados(1, 8) + " jabalí(es). [Bestiario 1, 187]";
             } else if (encuentro <= 17) {
-                return tiraDados(2, 4) + " boggards.  [Bestiario 1, 41]";
+                return tiraDados(2, 4) + " boggards. [Bestiario 1, 41]";
             } else if (encuentro <= 21) {
                 return tiraDados(1, 6) + " lobo(s) marsupial(es) de la maleza.";
             } else if (encuentro <= 28) {
