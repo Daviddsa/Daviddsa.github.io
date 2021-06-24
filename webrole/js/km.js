@@ -90,23 +90,23 @@ function infoEncuentro(encuentro, libro, terreno) {
         switch (terreno) {
             case "10":
             if (encuentro <= 4) {
-                return tiraDados(1, 6) + " bandido(s).";
+                return tiraDados(1, 6) + " bandido(s). [KM 1, 12]";
             } else if (encuentro <= 11) {
                 return tiraDados(1, 4) + " jabalí(es). [Bestiario 1, 187]";
             } else if (encuentro <= 14) {
                 return tiraDados(1, 4) + " boggard(s). [Bestiario 1, 41]";
             } else if (encuentro <= 20) {
-                return "1 lobo marsupial.";
+                return "1 lobo marsupial. [KM 1,84]";
             } else if (encuentro <= 29) {
-                return tiraDados(1, 6) + " alce(s).";
+                return tiraDados(1, 6) + " alce(s). [KM 1, 76]";
             } else if (encuentro <= 35) {
                 return "1 dragón feérico.";
             } else if (encuentro <= 42) {
-                return tiraDados(1, 4) + " grig(s).";
+                return tiraDados(1, 4) + " grig(s). ";
             } else if (encuentro <= 47) {
                 return "1 oso pardo. [Bestiario 1, 230]";
             } else if (encuentro <= 54) {
-                return "1 cazador.";
+                return "1 cazador. [KM 1, 12]";
             } else if (encuentro <= 57) {
                 return tiraDados(1, 8) + " canijo(s). [Bestiario 1, 49]";
             } else if (encuentro <= 63) {
@@ -116,7 +116,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 71) {
                 return "1 slurk.";
             } else if (encuentro <= 75) {
-                return "1 tatzlwyrm.";
+                return "1 tatzlwyrm. [KM 1, 86]";
             } else if (encuentro <= 79) {
                 return tiraDados(1, 4) + " troll(es). [Bestiario 1, 277]";
             } else if (encuentro <= 82) {
@@ -133,15 +133,15 @@ function infoEncuentro(encuentro, libro, terreno) {
             break;
             case "20":
             if (encuentro <= 5) {
-                return tiraDados(1, 6) + " bandido(s).";
+                return tiraDados(1, 6) + " bandido(s). [KM 1, 12]";
             } else if (encuentro <= 11) {
                 return tiraDados(1, 4) + " jabalí(es). [Bestiario 1, 187]";
             } else if (encuentro <= 17) {
                 return tiraDados(1, 4) + " boggard(s). [Bestiario 1, 41]";
             } else if (encuentro <= 21) {
-                return "1 lobo marsupial.";
+                return "1 lobo marsupial. [KM 1,84]";
             } else if (encuentro <= 28) {
-                return tiraDados(1, 6) + " alce(s).";
+                return tiraDados(1, 6) + " alce(s). [KM 1, 76]";
             } else if (encuentro <= 32) {
                 return "1 dragón feérico.";
             } else if (encuentro <= 35) {
@@ -149,7 +149,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 41) {
                 return "1 oso pardo. [Bestiario 1, 230]";
             } else if (encuentro <= 49) {
-                return "1 cazador.";
+                return "1 cazador. [KM 1, 12]";
             } else if (encuentro <= 57) {
                 return "1 nixie.";
             } else if (encuentro <= 62) {
@@ -159,7 +159,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 75) {
                 return "1 slurk.";
             } else if (encuentro <= 79) {
-                return "1 tatzlwyrm.";
+                return "1 tatzlwyrm. [KM 1, 86]";
             } else if (encuentro <= 83) {
                 return tiraDados(1, 4) + " troll(es). [Bestiario 1, 277]";
             } else if (encuentro <= 90) {
@@ -172,13 +172,13 @@ function infoEncuentro(encuentro, libro, terreno) {
             break;
             case "30":
             if (encuentro <= 6) {
-                return tiraDados(1, 6) + " bandido(s).";
+                return tiraDados(1, 6) + " bandido(s). [KM 1, 12]";
             } else if (encuentro <= 15) {
                 return tiraDados(1, 4) + " jabalí(es). [Bestiario 1, 187]";
             } else if (encuentro <= 20) {
-                return "1 lobo marsupial.";
+                return "1 lobo marsupial. [KM 1,84]";
             } else if (encuentro <= 28) {
-                return tiraDados(1, 6) + " alce(s).";
+                return tiraDados(1, 6) + " alce(s). [KM 1, 76]";
             } else if (encuentro <= 32) {
                 return "1 dragón feérico.";
             } else if (encuentro <= 38) {
@@ -186,7 +186,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 40) {
                 return "1 oso pardo. [Bestiario 1, 230]";
             } else if (encuentro <= 51) {
-                return "1 cazador.";
+                return "1 cazador. [KM 1, 12]";
             } else if (encuentro <= 55) {
                 return tiraDados(1, 8) + " kóbold(s).";
             } else if (encuentro <= 57) {
@@ -196,7 +196,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 63) {
                 return "1 broza movediza. [Bestiario 1, 42]";
             } else if (encuentro <= 66) {
-                return "1 tatzlwyrm.";
+                return "1 tatzlwyrm. [KM 1, 86]";
             } else if (encuentro <= 71) {
                 return tiraDados(1, 4) + " troll(es). [Bestiario 1, 277]";
             } else if (encuentro <= 75) {
@@ -213,19 +213,19 @@ function infoEncuentro(encuentro, libro, terreno) {
             break;
             case "40":
             if (encuentro <= 8) {
-                return tiraDados(1, 6) + " bandido(s).";
+                return tiraDados(1, 6) + " bandido(s). [KM 1, 12]";
             } else if (encuentro <= 14) {
                 return tiraDados(1, 4) + " jabalí(es). [Bestiario 1, 187]";
             } else if (encuentro <= 19) {
-                return "1 lobo marsupial.";
+                return "1 lobo marsupial. [KM 1,84]";
             } else if (encuentro <= 27) {
-                return tiraDados(1, 6) + " alce(s).";
+                return tiraDados(1, 6) + " alce(s). [KM 1, 76]";
             } else if (encuentro <= 30) {
                 return "1 dragón feérico.";
             } else if (encuentro <= 35) {
                 return tiraDados(1, 4) + " grig(s).";
             } else if (encuentro <= 45) {
-                return "1 cazador.";
+                return "1 cazador. [KM 1, 12]";
             } else if (encuentro <= 51) {
                 return tiraDados(1, 8) + " kóbold(s).";
             } else if (encuentro <= 55) {
@@ -235,7 +235,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 62) {
                 return "1 broza movediza. [Bestiario 1, 42]";
             } else if (encuentro <= 67) {
-                return "1 tatzlwyrm.";
+                return "1 tatzlwyrm. [KM 1, 86]";
             } else if (encuentro <= 70) {
                 return tiraDados(1, 4) + " troll(es). [Bestiario 1, 277]";
             } else if (encuentro <= 74) {
@@ -264,9 +264,9 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 17) {
                 return tiraDados(2, 4) + " boggards. [Bestiario 1, 41]";
             } else if (encuentro <= 23) {
-                return tiraDados(1, 6) + " lobo(s) marsupial(es) de la maleza.";
+                return tiraDados(1, 6) + " lobo(s) marsupial(es) de la maleza. [KM 1,84]";
             } else if (encuentro <= 29) {
-                return tiraDados(2, 6) + " alces.";
+                return tiraDados(2, 6) + " alces. [KM 1, 76]";
             } else if (encuentro <= 35) {
                 return "1 dragón feérico.";
             } else if (encuentro <= 42) {
@@ -284,7 +284,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 71) {
                 return tiraDados(1, 6) + " lagarto(s) electrizante(s).";
             } else if (encuentro <= 75) {
-                return tiraDados(1, 6) + " tatzlwyrm(s).";
+                return tiraDados(1, 6) + " tatzlwyrm(s). [KM 1, 86]";
             } else if (encuentro <= 79) {
                 return tiraDados(2, 4) + " trolles. [Bestiario 1, 277]";
             } else if (encuentro <= 82) {
@@ -307,9 +307,9 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 17) {
                 return tiraDados(2, 4) + " boggards. [Bestiario 1, 41]";
             } else if (encuentro <= 21) {
-                return tiraDados(1, 6) + " lobo(s) marsupial(es) de la maleza.";
+                return tiraDados(1, 6) + " lobo(s) marsupial(es) de la maleza. [KM 1,84]";
             } else if (encuentro <= 28) {
-                return tiraDados(2, 6) + " alces.";
+                return tiraDados(2, 6) + " alces. [KM 1, 76]";
             } else if (encuentro <= 32) {
                 return "1 dragón feérico.";
             } else if (encuentro <= 35) {
@@ -327,7 +327,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 75) {
                 return tiraDados(1, 6) + " lagarto(s) electrizante(s).";
             } else if (encuentro <= 79) {
-                return tiraDados(1, 6) + " tatzlwyrm(s).";
+                return tiraDados(1, 6) + " tatzlwyrm(s). [KM 1, 86]";
             } else if (encuentro <= 83) {
                 return tiraDados(2, 4) + " trolles. [Bestiario 1, 277]";
             } else if (encuentro <= 88) {
@@ -346,9 +346,9 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 15) {
                 return tiraDados(1, 8) + " jabalí(es). [Bestiario 1, 187]";
             } else if (encuentro <= 20) {
-                return tiraDados(1, 6) + " lobo(s) marsupial(es) de la maleza.";
+                return tiraDados(1, 6) + " lobo(s) marsupial(es) de la maleza. [KM 1,84]";
             } else if (encuentro <= 28) {
-                return tiraDados(2, 6) + " alces.";
+                return tiraDados(2, 6) + " alces. [KM 1, 76]";
             } else if (encuentro <= 32) {
                 return "1 dragón feérico.";
             } else if (encuentro <= 38) {
@@ -364,7 +364,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 63) {
                 return "1 broza movediza. [Bestiario 1, 42]";
             } else if (encuentro <= 66) {
-                return tiraDados(1, 6) + " tatzlwyrm(s).";
+                return tiraDados(1, 6) + " tatzlwyrm(s). [KM 1, 86]";
             } else if (encuentro <= 71) {
                 return tiraDados(2, 4) + " trolles. [Bestiario 1, 277]";
             } else if (encuentro <= 75) {
@@ -385,9 +385,9 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 14) {
                 return tiraDados(1, 8) + " jabalí(es). [Bestiario 1, 187]";
             } else if (encuentro <= 19) {
-                return tiraDados(1, 6) + " lobo(s) marsupial(es) de la maleza.";
+                return tiraDados(1, 6) + " lobo(s) marsupial(es) de la maleza. [KM 1,84]";
             } else if (encuentro <= 27) {
-                return tiraDados(2, 6) + " alces.";
+                return tiraDados(2, 6) + " alces. [KM 1, 76]";
             } else if (encuentro <= 30) {
                 return "1 dragón feérico.";
             } else if (encuentro <= 35) {
@@ -401,7 +401,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 58) {
                 return "1 broza movediza. [Bestiario 1, 42]";
             } else if (encuentro <= 65) {
-                return tiraDados(1, 6) + " tatzlwyrm(s).";
+                return tiraDados(1, 6) + " tatzlwyrm(s). [KM 1, 86]";
             } else if (encuentro <= 70) {
                 return tiraDados(2, 4) + " trolles. [Bestiario 1, 277]";
             } else if (encuentro <= 74) {
@@ -424,7 +424,7 @@ function infoEncuentro(encuentro, libro, terreno) {
         switch (terreno) {
             case "20":
             if (encuentro <= 6) {
-                return tiraDados(1, 4) + " tatzlwyrm(s).";
+                return tiraDados(1, 4) + " tatzlwyrm(s). [KM 1, 86]";
             } else if (encuentro <= 14) {
                 return "1 oso pardo. [Bestiario 1, 230]";
             } else if (encuentro <= 17) {
@@ -438,7 +438,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 49) {
                 return tiraDados(2, 4) + " huargos. [Bestiario 1, 186]";
             } else if (encuentro <= 64) {
-                return tiraDados(1, 6) + " alce(s).";
+                return tiraDados(1, 6) + " alce(s). [KM 1, 76]";
             } else if (encuentro <= 70) {
                 return tiraDados(1, 4) + " blodeuwedd(s).";
             } else if (encuentro <= 83) {
@@ -465,7 +465,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 40) {
                 return tiraDados(2, 4) + " huargos. [Bestiario 1, 186]";
             } else if (encuentro <= 51) {
-                return tiraDados(1, 6) + " alce(s).";
+                return tiraDados(1, 6) + " alce(s). [KM 1, 76]";
             } else if (encuentro <= 55) {
                 return "1 quimera.";
             } else if (encuentro <= 59) {
@@ -500,7 +500,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             } else if (encuentro <= 40) {
                 return tiraDados(2, 4) + " huargos. [Bestiario 1, 186]";
             } else if (encuentro <= 43) {
-                return tiraDados(1, 6) + " alce(s).";
+                return tiraDados(1, 6) + " alce(s). [KM 1, 76]";
             } else if (encuentro <= 45) {
                 return "1 quimera.";
             } else if (encuentro <= 51) {
@@ -527,7 +527,7 @@ function infoEncuentro(encuentro, libro, terreno) {
             break;
             case "50":
             if (encuentro <= 3) {
-                return tiraDados(1, 4) + " tatzlwyrm(s).";
+                return tiraDados(1, 4) + " tatzlwyrm(s). [KM 1, 86]";
             } else if (encuentro <= 11) {
                 return "1 oso pardo. [Bestiario 1, 230]";
             } else if (encuentro <= 17) {
