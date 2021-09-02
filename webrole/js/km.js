@@ -1,4 +1,4 @@
-porAcumulado = 0;
+var porAcumulado = 0;
 
 function checkDatos() {
     if (getRadioValue("parte") == "1"
@@ -37,15 +37,36 @@ function checkDatos() {
     }
 }
 
+function encuentroEspecial(rastros, guarida) {
+    let evEspecial = tiraDados(1, 100);
+    let evento = "";
+
+    if (tiraDados(1, 100) <= rastros) {
+        return " (RASTRO, Hace " + tiraDados(1,10) + " horas)";
+    } else if (tiraDados(1, 100) <= guarida) {
+        return " (GUARIDA)";
+    }
+
+    if (evEspecial<10) {
+        evento = " herido (-" + tiraDados(1,4)*10 + "% de PG)";
+    } else if (evEspecial<20) {
+        evento = " luchando contra " + infoEncuentro(tiraDados(1, 100), getRadioValue("parte"), getRadioValue("terreno"));
+    } else if (evEspecial<30) {
+
+    }
+
+    return evento;
+}
+
 function hayEncuentro() {
     if (!checkDatos()) {
         document.getElementById("encuentro").innerHTML =
         "<br>" + new Date().toLocaleTimeString('es-ES', { hour: "numeric", minute: "numeric", second: "numeric"})
         + " --> LOS DATOS INTRODUCIDOS NO SON CORRECTOS";
     } else {
-        var posEncuentro = tiraDados(1, 100);
+        let posEncuentro = tiraDados(1, 100);
         // var encuentro = tiraDados(1, 100);
-        var siEncuentro = 0;
+        let siEncuentro = 0;
 
         switch (getRadioValue("accion")) {
             case "viasal":
@@ -90,45 +111,45 @@ function infoEncuentro(encuentro, libro, terreno) {
         switch (terreno) {
             case "10":
             if (encuentro <= 4) {
-                return tiraDados(1, 6) + " bandido(s). [KM 1, 12]";
+                return tiraDados(1, 6) + " bandido(s). [KM 1, 12]" + encuentroEspecial(10,5);
             } else if (encuentro <= 11) {
-                return tiraDados(1, 4) + " jabalí(es). [Bestiario 1, 187]";
+                return tiraDados(1, 4) + " jabalí(es). [Bestiario 1, 187]" + encuentroEspecial(20,0);
             } else if (encuentro <= 14) {
-                return tiraDados(1, 4) + " boggard(s). [Bestiario 1, 41]";
+                return tiraDados(1, 4) + " boggard(s). [Bestiario 1, 41]" + encuentroEspecial(20,10);
             } else if (encuentro <= 20) {
-                return "1 lobo marsupial. [KM 1,84]";
+                return "1 lobo marsupial. [KM 1,84]" + encuentroEspecial(5,0);
             } else if (encuentro <= 29) {
-                return tiraDados(1, 6) + " alce(s). [KM 1, 76]";
+                return tiraDados(1, 6) + " alce(s). [KM 1, 76]" + encuentroEspecial(40,0);
             } else if (encuentro <= 35) {
-                return "1 dragón feérico.";
+                return "1 dragón feérico." + encuentroEspecial(5,2);
             } else if (encuentro <= 42) {
-                return tiraDados(1, 4) + " grig(s). ";
+                return tiraDados(1, 4) + " grig(s). " + encuentroEspecial(5,2);
             } else if (encuentro <= 47) {
-                return "1 oso pardo. [Bestiario 1, 230]";
+                return "1 oso pardo. [Bestiario 1, 230]" + encuentroEspecial(25,15);
             } else if (encuentro <= 54) {
-                return "1 cazador. [KM 1, 12]";
+                return "1 cazador. [KM 1, 12]" + encuentroEspecial(10,5);
             } else if (encuentro <= 57) {
-                return tiraDados(1, 8) + " canijo(s). [Bestiario 1, 49]";
+                return tiraDados(1, 8) + " canijo(s). [Bestiario 1, 49]" + encuentroEspecial(10,5);
             } else if (encuentro <= 63) {
-                return "1 oso lechuza. [Bestiario 1, 229]";
+                return "1 oso lechuza. [Bestiario 1, 229]" + encuentroEspecial(0,0);
             } else if (encuentro <= 68) {
-                return "1 broza movediza. [Bestiario 1, 42]";
+                return "1 broza movediza. [Bestiario 1, 42]" + encuentroEspecial(60,0);
             } else if (encuentro <= 71) {
-                return "1 slurk.";
+                return "1 slurk." + encuentroEspecial(60,10);
             } else if (encuentro <= 75) {
-                return "1 tatzlwyrm. [KM 1, 86]";
+                return "1 tatzlwyrm. [KM 1, 86]" + encuentroEspecial(30,5);
             } else if (encuentro <= 79) {
-                return tiraDados(1, 4) + " troll(es). [Bestiario 1, 277]";
+                return tiraDados(1, 4) + " troll(es). [Bestiario 1, 277]" + encuentroEspecial(50,0);
             } else if (encuentro <= 82) {
-                return "1 hombre lobo. [Bestiario 1, 197]";
+                return "1 hombre lobo. [Bestiario 1, 197]" + encuentroEspecial(10,5);
             } else if (encuentro <= 85) {
-                return "1 ciempiés látigo gigante.";
+                return "1 ciempiés látigo gigante." + encuentroEspecial(70,5);
             } else if (encuentro <= 90) {
-                return "1 fuego fatuo. [Bestiario 1, 151]";
+                return "1 fuego fatuo. [Bestiario 1, 151]" + encuentroEspecial(5,1);
             } else if (encuentro <= 97) {
-                return tiraDados(1, 6) + " lobo(s). [Bestiario 1, 204]";
+                return tiraDados(1, 6) + " lobo(s). [Bestiario 1, 204]" + encuentroEspecial(10,5);
             } else {
-                return "1 huargo. [Bestiario 1, 186]";
+                return "1 huargo. [Bestiario 1, 186]" + encuentroEspecial(5,1);
             }
             break;
             case "20":
