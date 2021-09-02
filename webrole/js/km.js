@@ -584,72 +584,10 @@ function encuentroEspecial(rastros, guarida, tipoCriatura) {
         return " (Guarida)";
     }
 
-    switch (tipoCriatura) {
-        // aberracion
-        case 1:
-        break;
+    // aberracion 1, ajeno 2, animal 3, bestiaMagica 4, cieno 5, constructo 6, dragon 7, hada 8, humanoide 9, humanoideMonstruoso 10, muertoViviente 11, planta 12, sabandija 13
 
-        // ajeno
-        case 2:
-        break;
-
-        // animal
-        case 3:
-            if (evEspecial <= 10) {
-                evento = " (Herido, -" + tiraDados(1,4)*10 + "% de PG)";
-            } else if (evEspecial <= 20) {
-                evento = " (Luchando contra " + infoEncuentro(tiraDados(1, 100),    getRadioValue("parte"), getRadioValue("terreno")) + ")";
-            } else if (evEspecial <= 30) {
-                evento = " (Con " + tiraDados(1,4) + " crías)";
-            } else if (evEspecial <= 40) {
-                evento = " (Atrapado/Enredado/Enjaulado)";
-            } else if (evEspecial <= 45) {
-                evento = " (No muerto)";
-            }
-        break;
-
-        // bestiaMagica
-        case 4:
-        break;
-
-        // cieno
-        case 5:
-        break;
-
-        // constructo
-        case 6:
-        break;
-
-        // dragon
-        case 7:
-        break;
-
-        // hada
-        case 8:
-        break;
-
-        // humanoide
-        case 9:
-        break;
-
-        // humanoideMonstruoso
-        case 10:
-        break;
-
-        // muertoViviente
-        case 11:
-        break;
-
-        // planta
-        case 12:
-        break;
-
-        // sabandija
-        case 13:
-        break;
-
-        default:
-    }
+    // ¿Qué hace cada criatura? 20% Nada
+    
 
     return evento;
 }
