@@ -579,9 +579,9 @@ function encuentroEspecial(rastros, guarida) {
     let evento = "";
 
     if (tiraDados(1, 100) <= rastros) {
-        return " (RASTRO, Hace " + tiraDados(1,10) + " horas)";
+        return " (Rastro, hace " + tiraDados(1,10) + " horas)";
     } else if (tiraDados(1, 100) <= guarida) {
-        return " (GUARIDA)";
+        return " (Guarida)";
     }
 
     if (evEspecial<10) {
