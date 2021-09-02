@@ -584,12 +584,16 @@ function encuentroEspecial(rastros, guarida) {
         return " (Guarida)";
     }
 
-    if (evEspecial<10) {
+    if (evEspecial <= 10) {
         evento = " (Herido, -" + tiraDados(1,4)*10 + "% de PG)";
-    } else if (evEspecial<20) {
+    } else if (evEspecial <= 20) {
         evento = " (Luchando contra " + infoEncuentro(tiraDados(1, 100), getRadioValue("parte"), getRadioValue("terreno")) + ")";
-    } else if (evEspecial<30) {
-
+    } else if (evEspecial <= 30) {
+        evento = " (Con " + tiraDados(1,4) + " crías)";
+    } else if (evEspecial <= 40) {
+        evento = " (Atrapado/Enredado/Enjaulado)";
+    } else if (evEspecial <= 45) {
+        evento = " (No muerto)";
     }
 
     return evento;
