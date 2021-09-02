@@ -37,27 +37,6 @@ function checkDatos() {
     }
 }
 
-function encuentroEspecial(rastros, guarida) {
-    let evEspecial = tiraDados(1, 100);
-    let evento = "";
-
-    if (tiraDados(1, 100) <= rastros) {
-        return " (RASTRO, Hace " + tiraDados(1,10) + " horas)";
-    } else if (tiraDados(1, 100) <= guarida) {
-        return " (GUARIDA)";
-    }
-
-    if (evEspecial<10) {
-        evento = " herido (-" + tiraDados(1,4)*10 + "% de PG)";
-    } else if (evEspecial<20) {
-        evento = " luchando contra " + infoEncuentro(tiraDados(1, 100), getRadioValue("parte"), getRadioValue("terreno"));
-    } else if (evEspecial<30) {
-
-    }
-
-    return evento;
-}
-
 function hayEncuentro() {
     if (!checkDatos()) {
         document.getElementById("encuentro").innerHTML =
@@ -593,4 +572,25 @@ function infoEncuentro(encuentro, libro, terreno) {
         default:
         alert("Respuesta incorrecta");
     }
+}
+
+function encuentroEspecial(rastros, guarida) {
+    let evEspecial = tiraDados(1, 100);
+    let evento = "";
+
+    if (tiraDados(1, 100) <= rastros) {
+        return " (RASTRO, Hace " + tiraDados(1,10) + " horas)";
+    } else if (tiraDados(1, 100) <= guarida) {
+        return " (GUARIDA)";
+    }
+
+    if (evEspecial<10) {
+        evento = " herido (-" + tiraDados(1,4)*10 + "% de PG)";
+    } else if (evEspecial<20) {
+        evento = " luchando contra " + infoEncuentro(tiraDados(1, 100), getRadioValue("parte"), getRadioValue("terreno"));
+    } else if (evEspecial<30) {
+
+    }
+
+    return evento;
 }
