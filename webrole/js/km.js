@@ -585,9 +585,9 @@ function encuentroEspecial(rastros, guarida) {
     }
 
     if (evEspecial<10) {
-        evento = " herido (-" + tiraDados(1,4)*10 + "% de PG)";
+        evento = " (Herido, -" + tiraDados(1,4)*10 + "% de PG)";
     } else if (evEspecial<20) {
-        evento = " luchando contra " + infoEncuentro(tiraDados(1, 100), getRadioValue("parte"), getRadioValue("terreno"));
+        evento = " (Luchando contra " + infoEncuentro(tiraDados(1, 100), getRadioValue("parte"), getRadioValue("terreno")) + ")";
     } else if (evEspecial<30) {
 
     }
