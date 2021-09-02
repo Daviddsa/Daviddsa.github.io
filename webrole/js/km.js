@@ -90,45 +90,45 @@ function infoEncuentro(encuentro, libro, terreno) {
         switch (terreno) {
             case "10":
             if (encuentro <= 4) {
-                return tiraDados(1, 6) + " bandido(s). [KM 1, 12]" + encuentroEspecial(10,5);
+                return tiraDados(1, 6) + " bandido(s). [KM 1, 12]" + encuentroEspecial(10,5,9);
             } else if (encuentro <= 11) {
-                return tiraDados(1, 4) + " jabalí(es). [Bestiario 1, 187]" + encuentroEspecial(20,0);
+                return tiraDados(1, 4) + " jabalí(es). [Bestiario 1, 187]" + encuentroEspecial(20,0,3);
             } else if (encuentro <= 14) {
-                return tiraDados(1, 4) + " boggard(s). [Bestiario 1, 41]" + encuentroEspecial(20,10);
+                return tiraDados(1, 4) + " boggard(s). [Bestiario 1, 41]" + encuentroEspecial(20,10,9);
             } else if (encuentro <= 20) {
-                return "1 lobo marsupial. [KM 1,84]" + encuentroEspecial(5,0);
+                return "1 lobo marsupial. [KM 1,84]" + encuentroEspecial(5,0,3);
             } else if (encuentro <= 29) {
-                return tiraDados(1, 6) + " alce(s). [KM 1, 76]" + encuentroEspecial(40,0);
+                return tiraDados(1, 6) + " alce(s). [KM 1, 76]" + encuentroEspecial(40,0,3);
             } else if (encuentro <= 35) {
-                return "1 dragón feérico." + encuentroEspecial(5,2);
+                return "1 dragón feérico." + encuentroEspecial(5,2,7);
             } else if (encuentro <= 42) {
-                return tiraDados(1, 4) + " grig(s). " + encuentroEspecial(5,2);
+                return tiraDados(1, 4) + " grig(s). " + encuentroEspecial(5,2,8);
             } else if (encuentro <= 47) {
-                return "1 oso pardo. [Bestiario 1, 230]" + encuentroEspecial(25,15);
+                return "1 oso pardo. [Bestiario 1, 230]" + encuentroEspecial(25,15,3);
             } else if (encuentro <= 54) {
-                return "1 cazador. [KM 1, 12]" + encuentroEspecial(10,5);
+                return "1 cazador. [KM 1, 12]" + encuentroEspecial(10,5,9);
             } else if (encuentro <= 57) {
-                return tiraDados(1, 8) + " canijo(s). [Bestiario 1, 49]" + encuentroEspecial(10,5);
+                return tiraDados(1, 8) + " canijo(s). [Bestiario 1, 49]" + encuentroEspecial(10,5,8);
             } else if (encuentro <= 63) {
-                return "1 oso lechuza. [Bestiario 1, 229]" + encuentroEspecial(0,0);
+                return "1 oso lechuza. [Bestiario 1, 229]" + encuentroEspecial(30,10,4);
             } else if (encuentro <= 68) {
-                return "1 broza movediza. [Bestiario 1, 42]" + encuentroEspecial(60,0);
+                return "1 broza movediza. [Bestiario 1, 42]" + encuentroEspecial(60,0,12);
             } else if (encuentro <= 71) {
-                return "1 slurk." + encuentroEspecial(60,10);
+                return "1 slurk." + encuentroEspecial(60,10,4);
             } else if (encuentro <= 75) {
-                return "1 tatzlwyrm. [KM 1, 86]" + encuentroEspecial(30,5);
+                return "1 tatzlwyrm. [KM 1, 86]" + encuentroEspecial(30,5,7);
             } else if (encuentro <= 79) {
-                return tiraDados(1, 4) + " troll(es). [Bestiario 1, 277]" + encuentroEspecial(50,0);
+                return tiraDados(1, 4) + " troll(es). [Bestiario 1, 277]" + encuentroEspecial(50,5,9);
             } else if (encuentro <= 82) {
-                return "1 hombre lobo. [Bestiario 1, 197]" + encuentroEspecial(10,5);
+                return "1 hombre lobo. [Bestiario 1, 197]" + encuentroEspecial(10,5,9);
             } else if (encuentro <= 85) {
-                return "1 ciempiés látigo gigante." + encuentroEspecial(70,5);
+                return "1 ciempiés látigo gigante." + encuentroEspecial(70,5,13);
             } else if (encuentro <= 90) {
-                return "1 fuego fatuo. [Bestiario 1, 151]" + encuentroEspecial(5,1);
+                return "1 fuego fatuo. [Bestiario 1, 151]" + encuentroEspecial(5,1,1);
             } else if (encuentro <= 97) {
-                return tiraDados(1, 6) + " lobo(s). [Bestiario 1, 204]" + encuentroEspecial(10,5);
+                return tiraDados(1, 6) + " lobo(s). [Bestiario 1, 204]" + encuentroEspecial(10,5,3);
             } else {
-                return "1 huargo. [Bestiario 1, 186]" + encuentroEspecial(5,1);
+                return "1 huargo. [Bestiario 1, 186]" + encuentroEspecial(5,1,4);
             }
             break;
             case "20":
@@ -574,7 +574,7 @@ function infoEncuentro(encuentro, libro, terreno) {
     }
 }
 
-function encuentroEspecial(rastros, guarida) {
+function encuentroEspecial(rastros, guarida, tipoCriatura) {
     let evEspecial = tiraDados(1, 100);
     let evento = "";
 
@@ -584,16 +584,71 @@ function encuentroEspecial(rastros, guarida) {
         return " (Guarida)";
     }
 
-    if (evEspecial <= 10) {
-        evento = " (Herido, -" + tiraDados(1,4)*10 + "% de PG)";
-    } else if (evEspecial <= 20) {
-        evento = " (Luchando contra " + infoEncuentro(tiraDados(1, 100), getRadioValue("parte"), getRadioValue("terreno")) + ")";
-    } else if (evEspecial <= 30) {
-        evento = " (Con " + tiraDados(1,4) + " crías)";
-    } else if (evEspecial <= 40) {
-        evento = " (Atrapado/Enredado/Enjaulado)";
-    } else if (evEspecial <= 45) {
-        evento = " (No muerto)";
+    switch (tipoCriatura) {
+        // aberracion
+        case 1:
+        break;
+
+        // ajeno
+        case 2:
+        break;
+
+        // animal
+        case 3:
+            if (evEspecial <= 10) {
+                evento = " (Herido, -" + tiraDados(1,4)*10 + "% de PG)";
+            } else if (evEspecial <= 20) {
+                evento = " (Luchando contra " + infoEncuentro(tiraDados(1, 100),    getRadioValue("parte"), getRadioValue("terreno")) + ")";
+            } else if (evEspecial <= 30) {
+                evento = " (Con " + tiraDados(1,4) + " crías)";
+            } else if (evEspecial <= 40) {
+                evento = " (Atrapado/Enredado/Enjaulado)";
+            } else if (evEspecial <= 45) {
+                evento = " (No muerto)";
+            }
+        break;
+
+        // bestiaMagica
+        case 4:
+        break;
+
+        // cieno
+        case 5:
+        break;
+
+        // constructo
+        case 6:
+        break;
+
+        // dragon
+        case 7:
+        break;
+
+        // hada
+        case 8:
+        break;
+
+        // humanoide
+        case 9:
+        break;
+
+        // humanoideMonstruoso
+        case 10:
+        break;
+
+        // muertoViviente
+        case 11:
+        break;
+
+        // planta
+        case 12:
+        break;
+
+        // sabandija
+        case 13:
+        break;
+
+        default:
     }
 
     return evento;
