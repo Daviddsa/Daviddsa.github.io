@@ -584,10 +584,10 @@ function encuentroEspecial(rastros, guarida, tipoCriatura) {
         return " (Guarida)";
     }
 
-    // aberracion 1, ajeno 2, animal 3, bestiaMagica 4, cieno 5, constructo 6, dragon 7, hada 8, humanoide 9, humanoideMonstruoso 10, muertoViviente 11, planta 12, sabandija 13
+    // IDEA: aberracion 1, ajeno 2, animal 3, bestiaMagica 4, cieno 5, constructo 6, dragon 7, hada 8, humanoide 9, humanoideMonstruoso 10, muertoViviente 11, planta 12, sabandija 13
 
     // ¿Qué hace cada criatura? 20% Nada
-    
+    // TODO: 
 
     return evento;
 }
