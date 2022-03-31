@@ -90,13 +90,8 @@
 
     <script>
         $(document).ready(function () {
-            $('#caracteristicas').on('input change', function () {
-                if ($(this).val() != '') {
-                    $('#generar').prop('disabled', false);
-                }
-                else {
-                    $('#generar').prop('disabled', true);
-                }
+            $('#caracteristicas').on('click', function () {
+                $('#generar').prop('disabled', true);
             });
         });
     </script>
