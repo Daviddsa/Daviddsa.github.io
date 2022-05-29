@@ -1,0 +1,16 @@
+{"races":[
+  {"name":"human",
+    "min_age":"",
+    "age_mod1":35,
+    "age_mod2":53,
+    "age_mod3":70,
+    "max_age":"70+2d20",
+    "stats_mod":["str":10,"dex":10,"con":10,"int":10,"wis":10,"cha":10,"luc":25]},
+  {"name":"dwarf",
+    "min_age":"",
+    "age_mod1":125,
+    "age_mod2":188,
+    "age_mod3":250,
+    "max_age":"250+2d100",
+    "stats_mod":["str":10,"dex":10,"con":10,"int":10,"wis":10,"cha":10,"luc":25]},
+]}
